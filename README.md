@@ -43,7 +43,8 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 ## Arquivos publicados
 
 - `index.html` — prévia do site no GitHub Pages, com metadados OpenGraph.
-- `cin-recplay-2026.js` — site completo, sem dependências externas.
+- `cin-recplay-2026.js` — site completo. Carrega a fonte Proxima Nova via CDN
+  (fallback sans); não usa bibliotecas externas.
 - `og.png` — imagem de compartilhamento 1200×630 (WhatsApp, redes sociais).
 - `.nojekyll` — evita o processamento do Jekyll no Pages.
 - `README.md` — este documento.
