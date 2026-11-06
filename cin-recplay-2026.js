@@ -89,6 +89,12 @@
 
   function init() {
     if (document.getElementById("cin26")) return;
+    if (!document.getElementById("cin26font")) {
+      var fs = document.createElement("style");
+      fs.id = "cin26font";
+      fs.textContent = "@font-face{font-family:'Proxima Nova';font-style:normal;font-weight:700;font-display:swap;src:local('Proxima Nova Bold'),url('https://fonts.cdnfonts.com/s/27118/Mark%20Simonson%20%20Proxima%20Nova%20Bold.woff') format('woff')}";
+      document.head.appendChild(fs);
+    }
     var h = document.createElement("div");
     h.id = "cin26";
     var r = h.attachShadow({ mode: "open" });
