@@ -42,10 +42,21 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 
 ## Arquivos publicados
 
-- `index.html` — prévia do site no GitHub Pages.
+- `index.html` — prévia do site no GitHub Pages, com metadados OpenGraph.
 - `cin-recplay-2026.js` — site completo, sem dependências externas.
+- `og.png` — imagem de compartilhamento 1200×630 (WhatsApp, redes sociais).
 - `.nojekyll` — evita o processamento do Jekyll no Pages.
 - `README.md` — este documento.
+
+## Compartilhamento (OpenGraph)
+
+O `index.html` já aponta para `og.png` com título, descrição e dimensões.
+Depois de configurar o domínio próprio, troque as URLs absolutas de
+`og:url`, `og:image` e `twitter:image` para o domínio final.
+
+O WhatsApp guarda cache do preview. Se o link já foi compartilhado antes,
+use uma URL com query string (por exemplo `?v=2`) ou o Facebook Sharing
+Debugger para forçar nova leitura.
 
 ## Atualizar
 
