@@ -46,14 +46,16 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 - `cin-recplay-2026.js` — site completo. Carrega a fonte Proxima Nova via CDN
   (fallback sans); não usa bibliotecas externas.
 - `og.png` — imagem de compartilhamento 1200×630 (WhatsApp, redes sociais).
+- `favicon.svg` — favicon vetorial com o símbolo do CIn no gradiente.
+- `favicon-32.png` e `apple-touch-icon.png` — fallbacks para navegadores e iOS.
 - `.nojekyll` — evita o processamento do Jekyll no Pages.
 - `README.md` — este documento.
 
 ## Compartilhamento (OpenGraph)
 
-O `index.html` já aponta para `og.png` com título, descrição e dimensões.
-Depois de configurar o domínio próprio, troque as URLs absolutas de
-`og:url`, `og:image` e `twitter:image` para o domínio final.
+O `index.html` aponta para `og.png` com título, descrição e dimensões. As URLs
+absolutas de `og:url`, `og:image`, `og:image:secure_url` e `twitter:image` já
+usam o domínio final `https://recnplay.cin.ufpe.br/`.
 
 O WhatsApp guarda cache do preview. Se o link já foi compartilhado antes,
 use uma URL com query string (por exemplo `?v=2`) ou o Facebook Sharing
