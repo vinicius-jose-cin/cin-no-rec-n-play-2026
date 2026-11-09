@@ -48,6 +48,7 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 - `og.png` — imagem de compartilhamento 1200×630 (WhatsApp, redes sociais).
 - `favicon.svg` — favicon vetorial com o símbolo do CIn no gradiente.
 - `favicon-32.png` e `apple-touch-icon.png` — fallbacks para navegadores e iOS.
+- `mapa-como-chegar.png` — mapa exibido no botão “Mapa de como chegar”.
 - `.nojekyll` — evita o processamento do Jekyll no Pages.
 - `README.md` — este documento.
 
