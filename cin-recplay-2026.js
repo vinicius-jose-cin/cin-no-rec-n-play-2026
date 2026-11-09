@@ -26,12 +26,24 @@
     { t:0, n:"Fluência em IA para empresas: como se manter sempre à frente na corrida tecnológica?", p:["Giordano Cabral","Filipe Calegario","Rafael Palermo"], h:"10:00–11:00", l:"CESAR School · Bloco A, Arquibancada", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
     { t:0, n:"Como construir um plano estratégico de IA para meu negócio", p:["Germano Vasconcelos","Geber Ramalho","Giordano Cabral"], h:"12:40–13:40", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
     { t:0, n:"Debug Arena", p:["André Bartholomeu","Nathanael Silva","Douglas Silva"], h:"13:20–16:20", l:"UNIAESO · LAB", q:"UNIAESO, Rua do Bom Jesus, 137, Recife - PE", g:["Engenharia de Software","Games"], d:["13"] },
-    { t:1, n:"RobôCIn", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Robótica"], d:["11","12","13","14"] },
-    { t:1, n:"Live", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11","12","13","14"] },
-    { t:1, n:"LED", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11","12","13","14"] },
-    { t:1, n:"SEAL", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11","12","13","14"] },
-    { t:1, n:"LAJE", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Games"], d:["11","12","13","14"] },
-    { t:1, n:"Voxar", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Visão Computacional"], d:["11","12","13","14"] }
+    { t:1, n:"Live", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11"] },
+    { t:1, n:"SEAL", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11"] },
+    { t:1, n:"LAJE", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Games"], d:["11"] },
+    { t:1, n:"Live", p:[], h:"10:00–12:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["12"] },
+    { t:1, n:"SEAL", p:[], h:"10:00–12:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["12"] },
+    { t:1, n:"Voxar", p:[], h:"12:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Visão Computacional"], d:["12"] },
+    { t:1, n:"LED", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["12"] },
+    { t:1, n:"LAJE", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Games"], d:["12"] },
+    { t:1, n:"RobôCIn", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Robótica"], d:["13"] },
+    { t:1, n:"LED", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["13"] },
+    { t:1, n:"LAJE", p:[], h:"10:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Games"], d:["13"] },
+    { t:1, n:"SEAL", p:[], h:"12:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["13"] },
+    { t:1, n:"Laser", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["13"] },
+    { t:1, n:"RobôCIn", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Robótica"], d:["14"] },
+    { t:1, n:"LED", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["14"] },
+    { t:1, n:"LAJE", p:[], h:"10:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Games"], d:["14"] },
+    { t:1, n:"Laser", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["14"] },
+    { t:1, n:"SEAL", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["14"] }
   ];
 
   var N = [
@@ -237,7 +249,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 13:18";
+    r.getElementById("up").textContent = "09/11/2026, 13:20";
     R();
   }
 
