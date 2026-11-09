@@ -40,7 +40,7 @@
       t:"Conheça a iniciativa do CIn-UFPE para desenvolver jovens com superdotação intelectual",
       s:"No REC’n’Play 2026, instituição apresentará o Programa Supertalentos, que oferece formação científica gratuita a jovens com superdotação intelectual",
       dt:"09/11/2026, 10:55",
-      img:"/noticias/supertalentos/imagem.jpg",
+      img:"",
       url:"/noticias/supertalentos/",
       x:"O CIn-UFPE apresentará o Programa Supertalentos no REC’n’Play 2026, com debate, pitches e mostra nos dias 12 e 13 de novembro.",
       html:`<p>O Centro de Informática (CIn) da Universidade Federal de Pernambuco (UFPE) colocará o desenvolvimento de estudantes com superdotação intelectual em pauta no REC’n’Play 2026. Nos dias 12 e 13 de novembro, a instituição apresentará o Programa Supertalentos, conduzido pela UFPE, coordenado pelo CIn, em parceria com o Serviço Nacional de Aprendizagem Comercial em Pernambuco (SENAC-PE), o fundo Social Entrepreneurship Holding Ltda. e a AppCETech, empresa deep tech do Porto Digital.</p>
@@ -85,14 +85,14 @@
     "main{padding:0 4vw 48px}.sec{display:flex;align-items:center;gap:9px;font:700 11px var(--m);margin:0 0 18px}" +
     ".vtabs{display:flex;gap:26px;border-bottom:1px solid #fff2;margin:0 0 22px}" +
     ".vtab{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:0 0 12px;color:var(--u);font:600 15px var(--m);cursor:pointer;transition:.2s}.vtab[aria-pressed=true]{color:var(--k);border-color:var(--l)}" +
-    ".news{display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:24px;background:linear-gradient(#0b0b0b,#080808) padding-box,var(--c) border-box;border:1px solid transparent;border-radius:12px;padding:20px;margin:0 0 18px}" +
+    ".news{display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:24px;background:linear-gradient(#0b0b0b,#080808) padding-box,var(--c) border-box;border:1px solid transparent;border-radius:12px;padding:20px;margin:0 0 18px}.news.noimg{grid-template-columns:1fr}" +
     ".news-img{display:flex;align-items:center;justify-content:center;background:#0b0b0b;border-radius:8px;overflow:hidden}.news-img img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}" +
     ".news-date{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin-bottom:8px}" +
-    ".news h3{font:400 clamp(26px,3.4vw,40px)/1.02 Impact,sans-serif;margin:0 0 8px}" +
-    ".news-sub{font:600 16px/1.4 var(--m);color:var(--k);margin:0 0 12px}" +
+    ".news h3{font:400 clamp(24px,3vw,32px)/1.06 Impact,sans-serif;margin:0 0 8px}" +
+    ".news-sub{font:600 16px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 12px}" +
     ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}.news h3 a{color:inherit;text-decoration:none}.news h3 a:hover{color:#ec008c}.news-link{display:inline-block;margin-top:14px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.news-img{text-decoration:none}" +
     ".art .hero,.art .vtabs,.art #programa{display:none}.art main{padding-top:36px}.art #noticias{display:block}" +
-    ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:400 clamp(36px,6vw,64px)/1.02 Impact,sans-serif;margin:0 0 12px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:400 clamp(24px,3vw,34px)/1.1 Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
+    ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:400 clamp(30px,4.6vw,46px)/1.05 Impact,sans-serif;margin:0 0 12px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:400 clamp(24px,3vw,34px)/1.1 Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
     ".days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}" +
     ".day{text-align:left;background:#0c0c0c;border:1px solid #fff2;border-radius:10px;padding:14px;color:var(--k);cursor:pointer}" +
     ".day b{display:block;font:clamp(30px,4vw,44px)/1 Impact,sans-serif}" +
@@ -180,7 +180,8 @@
     var NT = r.getElementById("noticias"), TP = r.getElementById("tab-prog"), TN = r.getElementById("tab-news"), SP = r.getElementById("programa");
     function RN() {
       NT.innerHTML = N.length ? N.map(function (n) {
-        return '<article class=news><a class=news-img href="' + n.url + '"><img src="' + n.img + '" alt="' + n.t + '" loading=lazy></a><div><div class=news-date>' + n.dt + '</div><h3><a href="' + n.url + '">' + n.t + '</a></h3><p class=news-sub>' + n.s + '</p><p class=news-text>' + n.x + '</p><a class=news-link href="' + n.url + '">Ler notícia →</a></div></article>';
+        var im = n.img ? '<a class=news-img href="' + n.url + '"><img src="' + n.img + '" alt="' + n.t + '" loading=lazy></a>' : '';
+        return '<article class="news' + (n.img ? '' : ' noimg') + '">' + im + '<div><div class=news-date>' + n.dt + '</div><h3><a href="' + n.url + '">' + n.t + '</a></h3><p class=news-sub>' + n.s + '</p><p class=news-text>' + n.x + '</p><a class=news-link href="' + n.url + '">Ler notícia →</a></div></article>';
       }).join("") : '<div class=empty><b>Nenhuma notícia ainda</b><span>As novidades aparecerão aqui.</span></div>';
     }
     function SV(v) {
@@ -193,7 +194,7 @@
     TN.onclick = function () { SV(true); };
     var ART = document.documentElement.getAttribute("data-news");
     function RA(n) {
-      return '<article class=article><a class=back href="/">← Voltar para a programação</a><img class=article-img src="' + n.img + '" alt="' + n.t + '"><div class=article-meta>' + n.dt + '</div><h1 class=article-title>' + n.t + '</h1><p class=article-sub>' + n.s + '</p><div class=article-body>' + n.html + '</div></article>';
+      return '<article class=article><a class=back href="/">← Voltar para a programação</a>' + (n.img ? '<img class=article-img src="' + n.img + '" alt="' + n.t + '">' : '') + '<div class=article-meta>' + n.dt + '</div><h1 class=article-title>' + n.t + '</h1><p class=article-sub>' + n.s + '</p><div class=article-body>' + n.html + '</div></article>';
     }
     if (ART) {
       var aa = N.filter(function (n) { return n.slug === ART; })[0];
@@ -236,7 +237,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 10:55";
+    r.getElementById("up").textContent = "09/11/2026, 11:18";
     R();
   }
 

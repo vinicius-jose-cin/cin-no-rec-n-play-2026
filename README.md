@@ -61,7 +61,7 @@ A aba **Notícias** é alimentada pelo array `N`, no topo de
 ```js
 { slug:"supertalentos",
   t:"Título", s:"Subtítulo", dt:"DD/MM/AAAA, HH:MM",
-  img:"/noticias/supertalentos/imagem.jpg",
+  img:"", // opcional; ex.: "/noticias/supertalentos/imagem.jpg"
   url:"/noticias/supertalentos/",
   x:"Resumo exibido no card",
   html:`<p>Texto completo da notícia.</p>` }
@@ -71,7 +71,7 @@ A aba **Notícias** é alimentada pelo array `N`, no topo de
 - `t`: título.
 - `s`: subtítulo.
 - `dt`: data e hora.
-- `img`: imagem no repositório.
+- `img`: imagem opcional; se ficar vazia, o card e a notícia não exibem imagem.
 - `url`: endereço da subpágina.
 - `x`: resumo exibido no card.
 - `html`: conteúdo completo em HTML.
