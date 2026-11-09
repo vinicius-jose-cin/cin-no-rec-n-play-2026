@@ -102,7 +102,7 @@
     ".news-date{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin-bottom:8px}" +
     ".news h3{font:700 clamp(24px,3vw,32px)/1.06 'Barlow Condensed',Impact,sans-serif;margin:0 0 8px}" +
     ".news-sub{font:600 16px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 12px}" +
-    ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}.news h3 a{color:inherit;text-decoration:none}.news h3 a:hover{color:#ec008c}.news-link{display:inline-block;margin-top:14px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.news-img{text-decoration:none}" +
+    ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}.news h3 a{color:inherit;text-decoration:none}.news h3 a:hover{background:var(--c);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}.news-link{display:inline-block;margin-top:14px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.news-img{text-decoration:none}" +
     ".art .hero,.art .vtabs,.art #programa{display:none}.art main{padding-top:36px}.art #noticias{display:block}" +
     ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:700 clamp(30px,4.6vw,46px)/1.05 'Barlow Condensed',Impact,sans-serif;margin:0 0 12px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:700 clamp(24px,3vw,34px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
     ".days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}" +
@@ -249,7 +249,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 13:20";
+    r.getElementById("up").textContent = "09/11/2026, 13:23";
     R();
   }
 
