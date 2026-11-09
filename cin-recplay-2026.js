@@ -22,7 +22,8 @@
     { t:0, n:"Programa Supertalentos: educação para superdotados", p:["Paulo Adeodato","Pierre Lucena","Olzeni Ribeiro","Ricardo Matheus","Carla Brolezzi"], h:"13:00–14:00", l:"Arena de Educação CESAR · Garagem 01", q:"Arena de Educação CESAR, Rua Bione, Cais do Apolo, 220, Recife - PE", g:["Educação","Inovação"], d:["12"] },
     { t:0, n:"Copiloto ou piloto? Até onde a IA pode pensar no lugar de quem programa", p:["Kiev Gama","Vinícius Garcia","Rodrigo Bonifácio","Paola Accioly"], h:"10:00–11:00", l:"E.T.E. Porto Digital · Sala 3", q:"E.T.E. Porto Digital, Av. Rio Branco, 193, Recife - PE", g:["IA","Engenharia de Software"], d:["13"] },
     { t:0, n:"Dirigindo entre dois mundos: experiências automotivas do futuro", p:["Francisco Simões","João Marcelo Teixeira","João Moizes"], h:"10:00–11:00", l:"Espaço CIn-UFPE", q:"Espaço CIn-UFPE, Av. Alfredo Lisboa, 239, Recife - PE", g:["Mobilidade","Tecnologia"], d:["13"] },
-    { t:0, n:"Como construir um plano estratégico de IA para meu negócio", p:["Germano Vasconcelos","Geber Ramalho","Giordano Cabral"], h:"13:00", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
+    { t:0, n:"Fluência em IA para empresas: como se manter sempre à frente na corrida tecnológica?", p:["Giordano Cabral","Filipe Calegario","Rafael Palermo"], h:"10:00–11:00", l:"CESAR School · Bloco A, Arquibancada", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
+    { t:0, n:"Como construir um plano estratégico de IA para meu negócio", p:["Germano Vasconcelos","Geber Ramalho","Giordano Cabral"], h:"13:00–14:00", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
     { t:0, n:"Debug Arena", p:["André Bartholomeu","Nathanael Silva","Douglas Silva"], h:"13:20–16:20", l:"UNIAESO · LAB", q:"UNIAESO, Rua do Bom Jesus, 137, Recife - PE", g:["Engenharia de Software","Games"], d:["13"] },
     { t:1, n:"RobôCIn", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, Av. Alfredo Lisboa, 239, Recife - PE", g:["Robótica"], d:["11","12","13","14"] },
     { t:1, n:"Live", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, Av. Alfredo Lisboa, 239, Recife - PE", g:["Tecnologia"], d:["11","12","13","14"] },
@@ -145,7 +146,7 @@
         R();
       };
     });
-    r.getElementById("up").textContent = "09/11/2026, 09:08";
+    r.getElementById("up").textContent = "09/11/2026, 09:24";
     R();
   }
 
