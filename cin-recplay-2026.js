@@ -67,7 +67,7 @@
     ".who{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--u);margin:0 0 14px}.who .pt{flex:1}" +
     ".meta{display:flex;align-items:center;gap:8px;border-top:1px solid #fff2;padding-top:8px;margin-top:8px;font-size:14px}.mic{flex:none;width:16px;height:16px}.mic.u{color:#ec008c}.mic.c,.mic.p{color:#ec5515}.mic svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.map{color:#e9e2d6;text-decoration:underline;text-decoration-color:#ec008c;text-underline-offset:3px}.map:hover{color:#ec008c}" +
     ".mapbtn{display:inline-flex;align-items:center;gap:8px;margin-top:8px;background:var(--l);color:#050505;border:0;border-radius:999px;padding:12px 18px;font:600 12px var(--m);cursor:pointer;transition:transform .2s,box-shadow .2s}.mapbtn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #ec551540}.mapbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}" +
-    ".modal{position:fixed;inset:0;z-index:99;display:flex;align-items:center;justify-content:center;padding:24px;background:#050505;overflow:auto}.modal[hidden]{display:none}.modal-body{position:relative;width:min(100%,760px);text-align:center}.modal-body img{display:block;width:auto;max-width:100%;max-height:calc(100vh - 120px);margin:0 auto;border-radius:12px;box-shadow:0 24px 70px #000}.modal-close{position:absolute;top:-14px;right:-14px;width:42px;height:42px;border-radius:50%;background:#050505;border:1px solid #fff3;color:#f7f2e8;display:flex;align-items:center;justify-content:center;cursor:pointer}.modal-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}.modal-link{display:inline-block;margin-top:14px;color:#ec008c;font-size:13px;text-decoration:underline;text-underline-offset:3px}.modal-sep{color:#8f8880;margin:0 8px}" +
+    ".modal{position:fixed;inset:0;z-index:99;display:flex;align-items:center;justify-content:center;padding:24px;background:#050505;overflow:auto}.modal[hidden]{display:none}.modal-body{position:relative;width:min(100%,760px);text-align:center}.modal-body img{display:block;width:auto;max-width:100%;max-height:calc(100vh - 120px);margin:0 auto;border-radius:12px;box-shadow:0 24px 70px #000}.modal-close{position:absolute;top:-14px;right:-14px;width:42px;height:42px;border-radius:50%;background:#050505;border:1px solid #fff3;color:#f7f2e8;display:flex;align-items:center;justify-content:center;cursor:pointer}.modal-close svg{width:20px;height:20px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round}.mapsbtn{display:inline-flex;align-items:center;gap:8px;margin-top:16px;background:#ec008c;color:#fff;border-radius:999px;padding:12px 20px;font:600 12px var(--m);text-decoration:none;transition:background .2s}.mapsbtn:hover{background:#ff2da6}.mapsbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}" +
     ".hint,.empty{border:1px dashed #fff3;border-radius:14px;padding:36px 24px;text-align:center;color:var(--u)}" +
     ".hint b,.empty b{display:block;font:clamp(22px,3vw,30px)/1.1 Impact,sans-serif;color:var(--k);margin-bottom:8px}" +
     "footer{border-top:1px solid #fff2;padding:26px 4vw 34px;text-align:center;font-size:12px;color:#8f8880}footer a{color:#ec008c}" +
@@ -77,7 +77,7 @@
   var T =
     '<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-u" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-c" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-p" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol></svg>' +
     '<div class=w><header><div class=brand><span class=cn>CIn no</span>' + L + '</div></header>' +
-    '<section class=hero><div><p class=k>CIn-UFPE no REC\'n\'Play 2026 · 11–14 NOV · Recife</p><h1>O futuro<br>nasce<br><em>aqui.</em></h1><button class=mapbtn id=mapbtn aria-haspopup=dialog aria-expanded=false><svg viewBox="0 0 24 24" aria-hidden=true><use href="#i-p"/></svg>Mapa de como chegar</button></div><i class=star></i></section>' +
+    '<section class=hero><div><p class=k>CIn-UFPE no REC\'n\'Play 2026 · 11–14 NOV · Recife</p><h1>O futuro<br>nasce<br><em>aqui.</em></h1><button class=mapbtn id=mapbtn aria-haspopup=dialog aria-expanded=false><svg viewBox="0 0 24 24" aria-hidden=true><use href="#i-p"/></svg>Mapa do Stand</button></div><i class=star></i></section>' +
     '<main><div class=sec>Programação</div><div class=days>' +
     '<button class=day data-d=11><b>11</b><span>QUA</span></button>' +
     '<button class=day data-d=12><b>12</b><span>QUI</span></button>' +
@@ -89,7 +89,7 @@
     '<footer><p>Feito com <span style=color:var(--p)>♥</span> pela <a href=https://ascom.cin.ufpe.br/>ASCOM CIn</a></p>' +
     '<p>Não nos responsabilizamos por eventuais mudanças na programação do REC\'n\'Play.</p>' +
     '<p>Última atualização: <span id=up></span></p></footer>' +
-    '<div class=modal id=mapa hidden><div class=modal-body role=dialog aria-modal=true aria-label="Mapa de como chegar"><button class=modal-close id=mapa-close aria-label="Fechar mapa"><svg viewBox="0 0 24 24" aria-hidden=true><path d="M6 6l12 12M18 6L6 18"/></svg></button><img id=mapa-img alt="Mapa: como chegar ao CIn no REC\'n\'Play, R. Vig. Tenório, 95" data-src="mapa-como-chegar.png"><a class=modal-link href="mapa-como-chegar.png" target=_blank rel=noopener>Abrir imagem</a><span class=modal-sep>·</span><a class=modal-link href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Vig.%20Ten%C3%B3rio%2C%2095%2C%20Recife%20-%20PE" target=_blank rel=noopener>Google Maps</a></div></div>' +
+    '<div class=modal id=mapa hidden><div class=modal-body role=dialog aria-modal=true aria-label="Mapa do Stand"><button class=modal-close id=mapa-close aria-label="Fechar mapa"><svg viewBox="0 0 24 24" aria-hidden=true><path d="M6 6l12 12M18 6L6 18"/></svg></button><img id=mapa-img alt="Mapa do stand do CIn no REC\'n\'Play, R. Vig. Tenório, 95" data-src="mapa-como-chegar.png"><a class=mapsbtn href="https://www.google.com/maps/search/?api=1&amp;query=R.%20Vig.%20Ten%C3%B3rio%2C%2095%2C%20Recife%20-%20PE" target=_blank rel=noopener><svg viewBox="0 0 24 24" aria-hidden=true><use href="#i-p"/></svg>Abrir no Google Maps</a></div></div>' +
     '</div>';
 
 
@@ -168,7 +168,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 10:09";
+    r.getElementById("up").textContent = "09/11/2026, 10:15";
     R();
   }
 
