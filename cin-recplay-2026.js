@@ -145,8 +145,7 @@
         R();
       };
     });
-    var dn = new Date();
-    r.getElementById("up").textContent = dn.toLocaleDateString("pt-BR") + ", " + ("0" + dn.getHours()).slice(-2) + ":" + ("0" + dn.getMinutes()).slice(-2);
+    r.getElementById("up").textContent = "09/11/2026, 09:08";
     R();
   }
 
