@@ -116,7 +116,7 @@
     ".hint,.empty{border:1px dashed #fff3;border-radius:14px;padding:36px 24px;text-align:center;color:var(--u)}" +
     ".hint b,.empty b{display:block;font:700 clamp(22px,3vw,30px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin-bottom:8px}" +
     "footer{border-top:1px solid #fff2;padding:26px 4vw 34px;text-align:center;font-size:12px;color:#8f8880}footer a{color:#ec008c}" +
-    ".sec,.gh h3,.hint b,.empty b,.day span,.k{text-transform:uppercase}" +
+    ".sec,.gh h3,.hint b,.empty b,.day span,.k,.hero h1{text-transform:uppercase}" +
     "@media(max-width:640px){.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}}" +
     "@media(max-width:700px){.news{grid-template-columns:1fr;gap:14px}.news-img img{max-height:none}}";
 
@@ -237,7 +237,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 11:28";
+    r.getElementById("up").textContent = "09/11/2026, 13:18";
     R();
   }
 

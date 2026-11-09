@@ -47,7 +47,7 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
   Condensed do Google Fonts (fallbacks sans/Impact); não usa bibliotecas
   externas.
 - `og.png` — imagem de compartilhamento 1200×630 (WhatsApp, redes sociais).
-- `favicon.svg` — favicon vetorial com o símbolo do CIn no gradiente.
+- `favicon.svg` — círculo com o gradiente e o símbolo do CIn em branco.
 - `favicon-32.png` e `apple-touch-icon.png` — fallbacks para navegadores e iOS.
 - `mapa-como-chegar.png` — mapa exibido no botão “Mapa do Stand”.
 - `noticias/` — subpáginas das notícias (ex.: `noticias/supertalentos/`).
