@@ -49,6 +49,7 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 - `favicon.svg` — favicon vetorial com o símbolo do CIn no gradiente.
 - `favicon-32.png` e `apple-touch-icon.png` — fallbacks para navegadores e iOS.
 - `mapa-como-chegar.png` — mapa exibido no botão “Mapa do Stand”.
+- `noticias/` — subpáginas das notícias (ex.: `noticias/supertalentos/`).
 - `.nojekyll` — evita o processamento do Jekyll no Pages.
 - `README.md` — este documento.
 
@@ -58,18 +59,26 @@ A aba **Notícias** é alimentada pelo array `N`, no topo de
 `cin-recplay-2026.js`:
 
 ```js
-{ t:"Título", s:"Subtítulo", dt:"DD/MM/AAAA, HH:MM",
-  img:"imagem.png", x:"Texto da notícia" }
+{ slug:"supertalentos",
+  t:"Título", s:"Subtítulo", dt:"DD/MM/AAAA, HH:MM",
+  img:"/noticias/supertalentos/imagem.jpg",
+  url:"/noticias/supertalentos/",
+  x:"Resumo exibido no card",
+  html:`<p>Texto completo da notícia.</p>` }
 ```
 
+- `slug`: identificador da notícia e da subpágina.
 - `t`: título.
 - `s`: subtítulo.
 - `dt`: data e hora.
-- `img`: caminho da imagem no repositório.
-- `x`: texto; use `\n` para quebrar linha.
+- `img`: imagem no repositório.
+- `url`: endereço da subpágina.
+- `x`: resumo exibido no card.
+- `html`: conteúdo completo em HTML.
 
-O item atual é um exemplo sobre o mapa do stand. Basta substituir ou
-adicionar novos objetos no array.
+Cada notícia tem uma subpágina em `noticias/<slug>/index.html`, com
+`<html data-news="<slug>">`, carregando `../../cin-recplay-2026.js`. O exemplo
+pronto é `noticias/supertalentos/`.
 
 ## Compartilhamento (OpenGraph)
 

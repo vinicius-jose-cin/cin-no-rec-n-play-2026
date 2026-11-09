@@ -35,7 +35,38 @@
   ];
 
   var N = [
-    { t:"Mapa do stand disponível", s:"Veja como chegar ao Espaço CIn-UFPE", dt:"09/11/2026, 10:41", img:"mapa-como-chegar.png", x:"O mapa com a rota até a R. Vig. Tenório, 95 já está no site.\nUse o botão “Mapa do Stand” no topo para abrir a imagem em tela cheia e o link para o Google Maps." }
+    {
+      slug:"supertalentos",
+      t:"Conheça a iniciativa do CIn-UFPE para desenvolver jovens com superdotação intelectual",
+      s:"No REC’n’Play 2026, instituição apresentará o Programa Supertalentos, que oferece formação científica gratuita a jovens com superdotação intelectual",
+      dt:"09/11/2026, 10:55",
+      img:"/noticias/supertalentos/imagem.jpg",
+      url:"/noticias/supertalentos/",
+      x:"O CIn-UFPE apresentará o Programa Supertalentos no REC’n’Play 2026, com debate, pitches e mostra nos dias 12 e 13 de novembro.",
+      html:`<p>O Centro de Informática (CIn) da Universidade Federal de Pernambuco (UFPE) colocará o desenvolvimento de estudantes com superdotação intelectual em pauta no REC’n’Play 2026. Nos dias 12 e 13 de novembro, a instituição apresentará o Programa Supertalentos, conduzido pela UFPE, coordenado pelo CIn, em parceria com o Serviço Nacional de Aprendizagem Comercial em Pernambuco (SENAC-PE), o fundo Social Entrepreneurship Holding Ltda. e a AppCETech, empresa deep tech do Porto Digital.</p>
+<p>O Programa Supertalentos promove formação científica gratuita nas áreas de Ciência, Tecnologia, Engenharia e Matemática (STEM), com atividades de pesquisa, desenvolvimento e inovação. A iniciativa busca desenvolver as competências dos participantes e ampliar suas oportunidades de formação e carreira. O programa também oferece acompanhamento psicopedagógico, voltado às necessidades educacionais e emocionais dos participantes.</p>
+<p>No dia 12 de novembro, das 13h às 14h, na Arena de Educação CESAR - Garagem 01, o professor Paulo Adeodato (CIn-UFPE) participará do debate “Supertalentos: iniciativas de apoio a jovens superdotados”, ao lado de Pierre Lucena (Porto Digital), Olzeni Ribeiro (Instituto do Neurodesenvolvimento), do professor Ricardo D’Elias Matheus (Instituto Principia) e de Carla Brolezzi (Superdotação no Mapa).</p>
+<p>Na sequência, das 14h20 às 16h20, na Arena de Educação CESAR - Mezanino, estudantes participantes do programa apresentarão pitches de soluções desenvolvidas nas áreas de macroalgas e tecnologia. Já no dia 13 de novembro, das 8h30 às 12h30, a Mostra Supertalentos reunirá demonstrações práticas de projetos, experimentos e resultados conduzidos pela equipe e pelos jovens do programa, na unidade Apolo 235 do SENAC-PE.</p>
+<p>O professor Paulo Adeodato, do CIn-UFPE, base tecnológica do programa, ressalta que a universidade já atua como agente de desenvolvimento e geração de riqueza para Pernambuco. Segundo ele, iniciativas como o Programa Supertalentos podem contribuir para reter talentos e a riqueza patrimonial gerada no estado, podendo essa metodologia vir a ser replicada para reter os talentos e riqueza nos seus locais de origem.</p>
+<h2>Confira a programação</h2>
+<p><strong>12 de novembro | Arena de Educação CESAR - Garagem 01</strong></p>
+<p><strong>Das 13h às 14h | Debate: Supertalentos: iniciativas de apoio a jovens superdotados</strong></p>
+<p>Com Pierre Lucena (Porto Digital), o professor Paulo Adeodato (CIn-UFPE), Olzeni Ribeiro (Instituto do Neurodesenvolvimento), o professor Ricardo D’Elias Matheus (Instituto Principia) e Carla Brolezzi (Superdotação no Mapa).</p>
+<p>Entrada com inscrição prévia.</p>
+<p><strong>12 de novembro | Arena de Educação CESAR - Mezanino</strong></p>
+<p><strong>Das 14h20 às 16h20 | Pitches: Jovens supertalentos em ação: projetos de macroalgas e tecnologia</strong></p>
+<p>Apresentação das soluções dos estudantes, com a presença de especialistas do SENAC-PE, da UFPE e da AppCETech.</p>
+<p>Acesso por ordem de chegada.</p>
+<p><strong>13 de novembro, das 8h30 às 12h30 | Apolo 235 (apoio do SENAC-PE)</strong></p>
+<p>Mostra Supertalentos: demonstração prática de projetos, experimentos e resultados conduzidos pela equipe e pelos jovens do programa.</p>
+<h2>Sobre o Programa Supertalentos</h2>
+<p>O Programa Supertalentos é uma iniciativa conduzida pela UFPE, coordenada pelo CIn-UFPE, em parceria com o SENAC-PE, o fundo Social Entrepreneurship Holding Ltda. e a AppCETech. Seu objetivo é identificar e acompanhar estudantes de 12 a 17 anos com indicadores de superdotação intelectual, oferecendo percursos de aprofundamento e acompanhamento pedagógico. Por meio da Aprendizagem Baseada em Projetos (PBL), os participantes desenvolvem atividades de pesquisa em STEM, com capacitação em métodos científicos e uso de inteligência artificial generativa.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival gratuito de inovação, tecnologia, criatividade e cultura. Em 2026, será realizado de 11 a 14 de novembro, no Bairro do Recife, com oficinas, debates, experiências e apresentações culturais. A programação e as inscrições para o festival estão disponíveis em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    }
   ];
 
   var L =
@@ -59,7 +90,9 @@
     ".news-date{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin-bottom:8px}" +
     ".news h3{font:400 clamp(26px,3.4vw,40px)/1.02 Impact,sans-serif;margin:0 0 8px}" +
     ".news-sub{font:600 16px/1.4 var(--m);color:var(--k);margin:0 0 12px}" +
-    ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}" +
+    ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}.news h3 a{color:inherit;text-decoration:none}.news h3 a:hover{color:#ec008c}.news-link{display:inline-block;margin-top:14px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.news-img{text-decoration:none}" +
+    ".art .hero,.art .vtabs,.art #programa{display:none}.art main{padding-top:36px}.art #noticias{display:block}" +
+    ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:400 clamp(36px,6vw,64px)/1.02 Impact,sans-serif;margin:0 0 12px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:400 clamp(24px,3vw,34px)/1.1 Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
     ".days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}" +
     ".day{text-align:left;background:#0c0c0c;border:1px solid #fff2;border-radius:10px;padding:14px;color:var(--k);cursor:pointer}" +
     ".day b{display:block;font:clamp(30px,4vw,44px)/1 Impact,sans-serif}" +
@@ -147,7 +180,7 @@
     var NT = r.getElementById("noticias"), TP = r.getElementById("tab-prog"), TN = r.getElementById("tab-news"), SP = r.getElementById("programa");
     function RN() {
       NT.innerHTML = N.length ? N.map(function (n) {
-        return '<article class=news><div class=news-img><img src="' + n.img + '" alt="' + n.t + '" loading=lazy></div><div><div class=news-date>' + n.dt + '</div><h3>' + n.t + '</h3><p class=news-sub>' + n.s + '</p><p class=news-text>' + n.x + '</p></div></article>';
+        return '<article class=news><a class=news-img href="' + n.url + '"><img src="' + n.img + '" alt="' + n.t + '" loading=lazy></a><div><div class=news-date>' + n.dt + '</div><h3><a href="' + n.url + '">' + n.t + '</a></h3><p class=news-sub>' + n.s + '</p><p class=news-text>' + n.x + '</p><a class=news-link href="' + n.url + '">Ler notícia →</a></div></article>';
       }).join("") : '<div class=empty><b>Nenhuma notícia ainda</b><span>As novidades aparecerão aqui.</span></div>';
     }
     function SV(v) {
@@ -158,7 +191,19 @@
     }
     TP.onclick = function () { SV(false); };
     TN.onclick = function () { SV(true); };
-    RN();
+    var ART = document.documentElement.getAttribute("data-news");
+    function RA(n) {
+      return '<article class=article><a class=back href="/">← Voltar para a programação</a><img class=article-img src="' + n.img + '" alt="' + n.t + '"><div class=article-meta>' + n.dt + '</div><h1 class=article-title>' + n.t + '</h1><p class=article-sub>' + n.s + '</p><div class=article-body>' + n.html + '</div></article>';
+    }
+    if (ART) {
+      var aa = N.filter(function (n) { return n.slug === ART; })[0];
+      r.querySelector(".w").classList.add("art");
+      SP.hidden = true;
+      NT.hidden = false;
+      NT.innerHTML = aa ? RA(aa) : '<div class=empty><b>Notícia não encontrada</b><span>Volte para a programação.</span></div>';
+    } else {
+      RN();
+    }
 
     Ds.forEach(function (b) {
       b.onclick = function () {
@@ -191,7 +236,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 10:41";
+    r.getElementById("up").textContent = "09/11/2026, 10:55";
     R();
   }
 
