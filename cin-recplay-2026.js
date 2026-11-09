@@ -17,13 +17,14 @@
     { t:0, n:"CIn/UFPE Conecta: universidade, empresas e governo pela inovação", p:["Juliano Iyoda","Cleber Zanchettin"], h:"18:00–19:00", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["Inovação","Empreendedorismo"], d:["12"] },
     { t:0, n:"As novas fronteiras da alfabetização digital: o que significa incluir digitalmente uma pessoa idosa em 2026?", p:["Millena Marçal","Yasmin Soares","João Guilherme Ramos"], h:"18:00–19:00", l:"CESAR School · Bloco C, Sala 111", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["Inclusão Digital","Educação"], d:["12"] },
     { t:0, n:"O mar de possibilidades de uma carreira em tecnologia", p:["Letícia Pedrosa","Eduarda Santana","Byanca Silva","Karem Santos","Alany Siqueira"], h:"10:00–11:00", l:"CESAR School · Bloco A, Arquibancada", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["Carreira","Tecnologia"], d:["12"] },
-    { t:0, n:"TDC Stage: adoção, cultura e letramento em IA — e se Chico Science encontrasse a inteligência artificial?", p:["Aguinaldo Flor","Carla Figueiredo","Laysa Silva"], h:"12:20", l:"Moinho Recife · Sala Manguezal", q:"Moinho Recife, Av. Alfredo Lisboa, 810, Recife - PE", g:["IA","Cultura"], d:["12"] },
+    { t:0, n:"TDC Stage: adoção, cultura e letramento em IA — e se Chico Science encontrasse a inteligência artificial?", p:["Aguinaldo Flor"], h:"11:35", l:"Moinho Recife · Sala Manguezal", q:"Moinho Recife, Av. Alfredo Lisboa, 810, Recife - PE", g:["IA","Cultura"], d:["11"] },
     { t:0, n:"Construindo tecnologias de ponta: desmistificando a relação entre pós-graduação e o mercado", p:["Francisco Simões","Thifany Souza","André Buarque","Willams Costa","João Moizes"], h:"15:40–16:40", l:"E.T.E. Porto Digital · Sala 4", q:"E.T.E. Porto Digital, Av. Rio Branco, 193, Recife - PE", g:["Carreira","Pesquisa"], d:["12"] },
     { t:0, n:"Programa Supertalentos: educação para superdotados", p:["Paulo Adeodato","Pierre Lucena","Olzeni Ribeiro","Ricardo Matheus","Carla Brolezzi"], h:"13:00–14:00", l:"Arena de Educação CESAR · Palco Externo", q:"Arena de Educação CESAR, Rua Bione, Cais do Apolo, 220, Recife - PE", g:["Educação","Inovação"], d:["12"] },
+    { t:0, n:"Mostra Supertalentos: ciência, tecnologia e resultados em exposição", p:["Paulo Adeodato","Severino Alves Júnior","Bruno Campello de Souza","Starch Melo de Souza","Ana de Cássia Monteiro de Lemos Silva","Jessica Acioly dos Santos"], h:"09:00–12:40", l:"Senac · Galeria", q:"Senac, R. do Apolo, 235, Recife - PE", g:["Educação","Ciência"], d:["13"] },
     { t:0, n:"Copiloto ou piloto? Até onde a IA pode pensar no lugar de quem programa", p:["Kiev Gama","Vinícius Garcia","Rodrigo Bonifácio","Paola Accioly"], h:"10:00–11:00", l:"E.T.E. Porto Digital · Sala 3", q:"E.T.E. Porto Digital, Av. Rio Branco, 193, Recife - PE", g:["IA","Engenharia de Software"], d:["13"] },
     { t:0, n:"Dirigindo entre dois mundos: experiências automotivas do futuro", p:["Francisco Simões","João Marcelo Teixeira","João Moizes"], h:"10:00–11:00", l:"Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Mobilidade","Tecnologia"], d:["13"] },
     { t:0, n:"Fluência em IA para empresas: como se manter sempre à frente na corrida tecnológica?", p:["Giordano Cabral","Filipe Calegario","Rafael Palermo"], h:"10:00–11:00", l:"CESAR School · Bloco A, Arquibancada", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
-    { t:0, n:"Como construir um plano estratégico de IA para meu negócio", p:["Germano Vasconcelos","Geber Ramalho","Giordano Cabral"], h:"13:00–14:00", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
+    { t:0, n:"Como construir um plano estratégico de IA para meu negócio", p:["Germano Vasconcelos","Geber Ramalho","Giordano Cabral"], h:"12:40–13:40", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
     { t:0, n:"Debug Arena", p:["André Bartholomeu","Nathanael Silva","Douglas Silva"], h:"13:20–16:20", l:"UNIAESO · LAB", q:"UNIAESO, Rua do Bom Jesus, 137, Recife - PE", g:["Engenharia de Software","Games"], d:["13"] },
     { t:1, n:"RobôCIn", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Robótica"], d:["11","12","13","14"] },
     { t:1, n:"Live", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11","12","13","14"] },
@@ -146,7 +147,7 @@
         R();
       };
     });
-    r.getElementById("up").textContent = "09/11/2026, 09:42";
+    r.getElementById("up").textContent = "09/11/2026, 09:54";
     R();
   }
 
