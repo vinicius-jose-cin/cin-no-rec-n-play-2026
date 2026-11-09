@@ -39,9 +39,9 @@
 
   var CSS =
     ":host{all:initial;display:block}*{box-sizing:border-box}" +
-    ".w{--m:system-ui,'Segoe UI',sans-serif;--k:#f7f2e8;--u:#a49c90;--p:#ec008c;--o:#ec5515;--l:#ec5515;--c:linear-gradient(110deg,#fff,#ffb3e1 22%,#ff7a3c 40%,#b6ff8a 62%,#b49bff 80%,#fff);background:radial-gradient(70% 55% at 12% 0,#3a0044,transparent 60%),#050505;color:var(--k);font:16px/1.5 system-ui,sans-serif;position:relative;overflow:hidden}" +
+    ".w{--m:'Space Grotesk',system-ui,sans-serif;--k:#f7f2e8;--u:#a49c90;--p:#ec008c;--o:#ec5515;--l:#ec5515;--c:linear-gradient(110deg,#fff,#ffb3e1 22%,#ff7a3c 40%,#b6ff8a 62%,#b49bff 80%,#fff);background:radial-gradient(70% 55% at 12% 0,#3a0044,transparent 60%),#050505;color:var(--k);font:16px/1.5 var(--m);position:relative;overflow:hidden}" +
     "header{display:flex;align-items:center;justify-content:flex-start;gap:16px;flex-wrap:wrap;padding:16px 4vw;border-bottom:1px solid #fff2}" +
-    ".brand{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.cn{color:#ec008c;font:700 clamp(18px,2.4vw,30px)/1 'Proxima Nova','Segoe UI',system-ui,sans-serif;letter-spacing:-.01em}.brand svg{display:block;height:clamp(18px,2.4vw,30px);width:auto}" +
+    ".brand{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.cn{color:#ec008c;font:700 clamp(18px,2.4vw,30px)/1 var(--m);letter-spacing:-.01em}.brand svg{display:block;height:clamp(18px,2.4vw,30px);width:auto}" +
     ".hero{display:grid;grid-template-columns:1fr auto;gap:24px;align-items:center;padding:6vw 4vw}" +
     ".k{font:700 10px var(--m);color:var(--l);margin:0}" +
     "h1{font:clamp(48px,10vw,120px)/.86 Impact,sans-serif;margin:14px 0 18px}" +
@@ -63,7 +63,7 @@
     ".card{background:linear-gradient(#0b0b0b,#080808) padding-box,var(--c) border-box;border:1px solid transparent;border-radius:12px;padding:24px}" +
     ".tags{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:10px}" +
     ".tags span{display:inline-block;font:600 11px var(--m);color:var(--l);background:#ec55151f;border:1px solid #ec551566;border-radius:4px;padding:5px 8px}" +
-    ".card h4{font:600 20px/1.2 system-ui,sans-serif;margin:0 0 10px}" +
+    ".card h4{font:600 20px/1.2 var(--m);margin:0 0 10px}" +
     ".who{display:flex;align-items:flex-start;gap:8px;font-size:14px;color:var(--u);margin:0 0 14px}.who .pt{flex:1}" +
     ".meta{display:flex;align-items:center;gap:8px;border-top:1px solid #fff2;padding-top:8px;margin-top:8px;font-size:14px}.mic{flex:none;width:16px;height:16px}.mic.u{color:#ec008c}.mic.c,.mic.p{color:#ec5515}.mic svg{display:block;width:100%;height:100%;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}.map{color:#e9e2d6;text-decoration:underline;text-decoration-color:#ec008c;text-underline-offset:3px}.map:hover{color:#ec008c}" +
     ".mapbtn{display:inline-flex;align-items:center;gap:8px;margin-top:8px;background:var(--l);color:#050505;border:0;border-radius:999px;padding:12px 18px;font:600 12px var(--m);cursor:pointer;transition:transform .2s,box-shadow .2s}.mapbtn:hover{transform:translateY(-2px);box-shadow:0 8px 24px #ec551540}.mapbtn svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}" +
@@ -95,12 +95,6 @@
 
   function init() {
     if (document.getElementById("cin26")) return;
-    if (!document.getElementById("cin26font")) {
-      var fs = document.createElement("style");
-      fs.id = "cin26font";
-      fs.textContent = "@font-face{font-family:'Proxima Nova';font-style:normal;font-weight:700;font-display:swap;src:local('Proxima Nova Bold'),url('https://fonts.cdnfonts.com/s/27118/Mark%20Simonson%20%20Proxima%20Nova%20Bold.woff') format('woff')}";
-      document.head.appendChild(fs);
-    }
     var h = document.createElement("div");
     h.id = "cin26";
     var r = h.attachShadow({ mode: "open" });
@@ -168,7 +162,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 10:15";
+    r.getElementById("up").textContent = "09/11/2026, 10:20";
     R();
   }
 
