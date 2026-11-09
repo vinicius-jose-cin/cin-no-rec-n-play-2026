@@ -145,7 +145,8 @@
         R();
       };
     });
-    r.getElementById("up").textContent = new Date().toLocaleDateString("pt-BR");
+    var dn = new Date();
+    r.getElementById("up").textContent = dn.toLocaleDateString("pt-BR") + ", " + ("0" + dn.getHours()).slice(-2) + ":" + ("0" + dn.getMinutes()).slice(-2);
     R();
   }
 
