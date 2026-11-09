@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="CIn">
+  <defs>
+    <linearGradient id="g" gradientUnits="userSpaceOnUse" x1="176.63" y1="206.31" x2="1340" y2="1142.8">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset=".22" stop-color="#ffb3e1"/>
+      <stop offset=".40" stop-color="#ff7a3c"/>
+      <stop offset=".62" stop-color="#b6ff8a"/>
+      <stop offset=".80" stop-color="#b49bff"/>
+      <stop offset="1" stop-color="#ffffff"/>
+    </linearGradient>
+  </defs>
+  <rect width="64" height="64" rx="14" fill="#050505"/>
+  <g transform="translate(-0.595 2.979) scale(0.043)" fill="url(#g)" fill-rule="evenodd">
+    <path d="M176.63,1082.8v-66.32s312.36-299.19,422.7-342.62c0,0,213.87-94.91,273.65,181.95,34.99,162.11,75.14,284.03,230.99,226.66,53.57-19.71,117.33-63.39,203.99-130.14l15.27,59.31s-624,659.44-836.16.96c-14.95-46.35-48.29-59.17-85.99-54.5-91.41,11.83-224.45,124.68-224.45,124.68"/>
+    <path d="M1062.19,206.31c35.72,59.57,45.11,154.65-45.34,208.89-35.55,21.32-81.45,39.14-127.02,45.44-88.88,12.28-176.38-3.72-182.59-14.09-9.29-15.5,52.69-233.33,148.19-290.6,89.97-53.96,173.33-5.39,206.76,50.36Z"/>
+  </g>
+</svg>
