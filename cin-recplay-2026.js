@@ -34,6 +34,10 @@
     { t:1, n:"Voxar", p:[], h:"", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Visão Computacional"], d:["11","12","13","14"] }
   ];
 
+  var N = [
+    { t:"Mapa do stand disponível", s:"Veja como chegar ao Espaço CIn-UFPE", dt:"09/11/2026, 10:41", img:"mapa-como-chegar.png", x:"O mapa com a rota até a R. Vig. Tenório, 95 já está no site.\nUse o botão “Mapa do Stand” no topo para abrir a imagem em tela cheia e o link para o Google Maps." }
+  ];
+
   var L =
     "<svg xmlns='http://www.w3.org/2000/svg' viewBox='146 113 561 76' role='img' aria-label='REC n Play 2026'><g fill='#ec008c'><path d='M343.28,161.12v-17.8c0-4.98-4.05-9.03-9.03-9.03-1.84,0-6.31.99-11.22,2.23v-3.87h-8.45v32.2h8.45v-19.55c5.25-1.35,9.79-2.45,10.56-2.45s1.22,1.59,1.22,4.23v1.45h0v12.59c0,7,5.66,12.76,12.75,12.76h5.43v-8.63h-5.59c-2.49,0-4.12-1.63-4.12-4.12Z'/><path d='M294.03,118.22h-20.42c-7.13,0-12.81,5.69-12.81,12.81v40.9c0,7.03,5.68,12.81,12.81,12.81h20.42c7.13,0,12.81-5.78,12.81-12.81v-6.94h-8.67v6.94c0,2.5-1.64,4.14-4.14,4.14h-20.42c-2.5,0-4.14-1.64-4.14-4.14v-40.9c0-2.5,1.64-4.14,4.14-4.14h20.42c2.5,0,4.14,1.64,4.14,4.14v7.22h8.67v-7.22c0-7.13-5.69-12.81-12.81-12.81Z'/><path d='M186.62,118.22h-38.67v8.67h5.43v56.89h8.67v-11.85h0v-7.03l20.84-3.03,3.52,19.6c.29,1.64,2.12,3.28,4.14,3.28h8.87v-8.67h-4.73c-.77,0-.96-1.25-.96-1.25l-2.36-14.58c4.71-1.99,8.05-4.63,8.05-13.36v-17.1c0-2.19-.8-4.18-2.08-5.76-2.28-3.5-6.21-5.8-10.73-5.8ZM190.76,138.74v5.73c0,4.24-.19,6.55-2.89,7.71l-25.81,3.87v-8.69h0v-20.47h24.57c2.5,0,4.14,1.64,4.14,4.14v7.71Z'/><path d='M240.32,118.22h-20.42c-7.13,0-12.81,5.69-12.81,12.81v41.19h.03s0,.02,0,.03c.02.85.12,1.68.3,2.49.03.12.08.23.11.35.17.67.37,1.33.64,1.96.17.4.4.75.61,1.12.18.32.33.66.54.97.41.61.88,1.16,1.38,1.68.05.05.09.12.14.16,1.72,1.73,3.92,2.97,6.42,3.48.02,0,.04.01.06.02.84.17,1.7.26,2.59.26h20.42c7.13,0,12.81-5.69,12.81-12.81v-6.94h-8.67v6.94c0,2.5-1.64,4.14-4.14,4.14h-20.42c-2.5,0-4.13-1.64-4.14-4.13v-13.53s23.44-3.56,26.49-4.1c5.79-1.04,10.89-3.95,10.89-13.91v-9.36c0-7.13-5.69-12.81-12.81-12.81ZM244.47,137.99c0,4.24-.19,6.55-2.89,7.71l-25.81,3.93v-8.75h0v-9.19c0-3.15,1.64-4.79,4.14-4.79h20.42c2.5,0,4.14,1.64,4.14,4.14v6.96Z'/><path d='M423.11,174.29v-55.71h-8.73v55.71c0,7,5.66,12.75,12.75,12.75h5.95v-8.63h-5.75c-2.49,0-4.22-1.63-4.22-4.12Z'/><path d='M463.72,118.45h-18.22c-7.09,0-12.75,5.66-12.75,12.75v1.63h8.63v-1.63c0-2.49,1.63-4.12,4.12-4.12h18.22c2.49,0,4.12,1.63,4.12,4.12v7l-27.71,4.03c-5.47,2.11-9.49,4.31-9.49,13.91v8.53c0,5.08,4.12,9.21,9.21,9.21s28-6.91,28-6.91v6.91h8.63v-42.87c0-6.9-5.66-12.56-12.75-12.56ZM467.85,158.34s-25.31,6.81-27.33,6.81c-.76,0-1.25-1.63-1.25-4.31v-2.3c0-4.22.19-6.52,2.88-7.67l25.7-4.51v11.99Z'/><path d='M527.54,119.31h-8.63l-6.82,42.35c-5.59,1.46-12.89,3.32-14.12,3.32-.76,0-2.6-.29-3.34-4.05l-6.7-41.62h-8.82l7.9,46.47c.04.3.09.59.15.88l.02.11h0c.96,4.06,4.6,7.1,8.95,7.1,2.73,0,8.95-1.49,14.16-2.88l-.22,2.88-2.21,14h8.24l11.41-68.37-.1.09.1-.28Z'/><path d='M396.81,118.26c-4.2,0-21.81,5.02-27.84,6.78v-6.59h-8.63v69.24h8.63v-13.81h24.29c7.09,0,12.75-5.75,12.75-12.76v-33.66c0-5.08-4.13-9.21-9.21-9.21ZM397.39,150.08v11.04c0,2.49-1.63,4.12-4.12,4.12h-24.29v-31.44c6.35-1.71,25.49-6.82,27.17-6.82.76,0,1.25,1.63,1.25,4.31v18.78Z'/><polygon points='343.23 128.58 348.65 139.86 354.76 137.1 350.17 125.43 343.23 128.58'/></g><g fill='#ec5515'><path d='M573.45,175.13c.98-.43,1.82-1.21,2.53-2.32.7-1.11,1.44-2.84,2.2-5.17l1.71.57-2.85,8.72-1.55,4.81h-33.89v-1.87c5.98-6.57,10.85-12.29,14.63-17.15,3.77-4.86,6.86-9.82,9.25-14.87,2.39-5.05,3.59-9.99,3.59-14.83,0-3.64-.8-6.54-2.4-8.72-1.6-2.17-4.06-3.26-7.37-3.26-3.97,0-7.05,1.68-9.25,5.05-2.2,3.37-3.35,7.96-3.46,13.77h-1.96c0-4.89.71-9.19,2.12-12.91,1.41-3.72,3.43-6.6,6.07-8.64,2.63-2.04,5.77-3.06,9.41-3.06,4.51,0,7.93,1.39,10.27,4.16,2.33,2.77,3.5,6.33,3.5,10.67,0,7.17-2.54,14.52-7.62,22.04-5.08,7.52-11.53,15.33-19.35,23.42v.24h20.29c1.79,0,3.18-.22,4.16-.65Z'/><path d='M593.28,178.47c-2.74-2.99-4.81-7.06-6.19-12.22-1.38-5.16-2.08-10.94-2.08-17.35s.69-12.07,2.08-17.15c1.38-5.08,3.45-9.1,6.19-12.06,2.74-2.96,6.1-4.44,10.06-4.44s7.32,1.48,10.06,4.44c2.74,2.96,4.81,6.98,6.19,12.06,1.39,5.08,2.08,10.8,2.08,17.15s-.69,12.19-2.08,17.35c-1.38,5.16-3.45,9.23-6.19,12.22-2.74,2.99-6.1,4.48-10.06,4.48s-7.32-1.49-10.06-4.48ZM611.74,171.55c1.79-5.59,2.69-13.14,2.69-22.65s-.9-16.78-2.69-22.32c-1.79-5.54-4.59-8.31-8.39-8.31s-6.6,2.77-8.39,8.31c-1.79,5.54-2.69,12.98-2.69,22.32s.9,17.06,2.69,22.65c1.79,5.59,4.59,8.39,8.39,8.39s6.6-2.8,8.39-8.39Z'/><path d='M658.1,175.13c.98-.43,1.82-1.21,2.53-2.32.7-1.11,1.44-2.84,2.2-5.17l1.71.57-2.85,8.72-1.55,4.81h-33.89v-1.87c5.98-6.57,10.85-12.29,14.63-17.15,3.77-4.86,6.86-9.82,9.25-14.87,2.39-5.05,3.59-9.99,3.59-14.83,0-3.64-.8-6.54-2.4-8.72-1.6-2.17-4.06-3.26-7.37-3.26-3.97,0-7.05,1.68-9.25,5.05-2.2,3.37-3.35,7.96-3.46,13.77h-1.96c0-4.89.71-9.19,2.12-12.91,1.41-3.72,3.43-6.6,6.07-8.64,2.63-2.04,5.77-3.06,9.41-3.06,4.51,0,7.93,1.39,10.27,4.16,2.33,2.77,3.5,6.33,3.5,10.67,0,7.17-2.54,14.52-7.62,22.04-5.08,7.52-11.53,15.33-19.35,23.42v.24h20.29c1.79,0,3.18-.22,4.16-.65Z'/><path d='M701.24,143.31c2.58,3.99,3.87,8.98,3.87,14.95,0,4.18-.64,8.16-1.91,11.94-1.28,3.78-3.22,6.86-5.83,9.25s-5.79,3.58-9.53,3.58-7.06-1.14-9.78-3.42c-2.72-2.28-4.79-5.49-6.23-9.61-1.44-4.13-2.16-8.88-2.16-14.26,0-6.9,1.24-13.21,3.71-18.94,2.47-5.73,6.11-10.5,10.92-14.3,4.81-3.8,10.55-6.33,17.23-7.58v1.79c-6.3,1.74-11.34,5-15.11,9.78-3.78,4.78-6.42,10.43-7.94,16.95,1.36-1.79,3.03-3.26,5.01-4.4,1.98-1.14,4.14-1.71,6.48-1.71,4.94,0,8.7,2,11.28,5.99ZM695.25,174.72c1.68-3.48,2.52-8.36,2.52-14.67,0-5.65-.77-10.31-2.32-13.97s-4.06-5.5-7.54-5.5c-2.07,0-3.98.58-5.74,1.75-1.77,1.17-3.25,2.84-4.44,5.01-.49,3.26-.73,6.52-.73,9.78,0,7.06.95,12.63,2.85,16.7,1.9,4.07,4.56,6.11,7.99,6.11s5.73-1.74,7.41-5.21Z'/></g></svg>";
 
@@ -48,6 +52,14 @@
     "h1 em{font-style:normal;background:var(--c);-webkit-background-clip:text;background-clip:text;color:transparent}" +
     ".star{display:block;width:clamp(90px,18vw,190px);aspect-ratio:1;background:var(--c);clip-path:polygon(50% 0,58% 34%,85% 15%,66% 42%,100% 50%,66% 58%,85% 85%,58% 66%,50% 100%,42% 66%,15% 85%,34% 58%,0 50%,34% 42%,15% 15%,42% 34%)}" +
     "main{padding:0 4vw 48px}.sec{display:flex;align-items:center;gap:9px;font:700 11px var(--m);margin:0 0 18px}" +
+    ".vtabs{display:flex;gap:26px;border-bottom:1px solid #fff2;margin:0 0 22px}" +
+    ".vtab{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:0 0 12px;color:var(--u);font:600 15px var(--m);cursor:pointer;transition:.2s}.vtab[aria-pressed=true]{color:var(--k);border-color:var(--l)}" +
+    ".news{display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:24px;background:linear-gradient(#0b0b0b,#080808) padding-box,var(--c) border-box;border:1px solid transparent;border-radius:12px;padding:20px;margin:0 0 18px}" +
+    ".news-img{display:flex;align-items:center;justify-content:center;background:#0b0b0b;border-radius:8px;overflow:hidden}.news-img img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}" +
+    ".news-date{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin-bottom:8px}" +
+    ".news h3{font:400 clamp(26px,3.4vw,40px)/1.02 Impact,sans-serif;margin:0 0 8px}" +
+    ".news-sub{font:600 16px/1.4 var(--m);color:var(--k);margin:0 0 12px}" +
+    ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}" +
     ".days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}" +
     ".day{text-align:left;background:#0c0c0c;border:1px solid #fff2;border-radius:10px;padding:14px;color:var(--k);cursor:pointer}" +
     ".day b{display:block;font:clamp(30px,4vw,44px)/1 Impact,sans-serif}" +
@@ -72,20 +84,21 @@
     ".hint b,.empty b{display:block;font:clamp(22px,3vw,30px)/1.1 Impact,sans-serif;color:var(--k);margin-bottom:8px}" +
     "footer{border-top:1px solid #fff2;padding:26px 4vw 34px;text-align:center;font-size:12px;color:#8f8880}footer a{color:#ec008c}" +
     ".sec,.gh h3,.hint b,.empty b,.day span,.k{text-transform:uppercase}" +
-    "@media(max-width:640px){.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}}";
+    "@media(max-width:640px){.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}}" +
+    "@media(max-width:700px){.news{grid-template-columns:1fr;gap:14px}.news-img img{max-height:none}}";
 
   var T =
     '<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-u" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-c" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-p" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol></svg>' +
     '<div class=w><header><div class=brand><span class=cn>CIn no</span>' + L + '</div></header>' +
     '<section class=hero><div><p class=k>CIn-UFPE no REC\'n\'Play 2026 · 11–14 NOV · Recife</p><h1>O futuro<br>nasce<br><em>aqui.</em></h1><button class=mapbtn id=mapbtn aria-haspopup=dialog aria-expanded=false><svg viewBox="0 0 24 24" aria-hidden=true><use href="#i-p"/></svg>Mapa do Stand</button></div><i class=star></i></section>' +
-    '<main><div class=sec>Programação</div><div class=days>' +
+    '<main><div class=vtabs><button class=vtab id=tab-prog aria-pressed=true>Programação</button><button class=vtab id=tab-news aria-pressed=false>Notícias</button></div><section id=programa><div class=days>' +
     '<button class=day data-d=11><b>11</b><span>QUA</span></button>' +
     '<button class=day data-d=12><b>12</b><span>QUI</span></button>' +
     '<button class=day data-d=13><b>13</b><span>SEX</span></button>' +
     '<button class=day data-d=14><b>14</b><span>SÁB</span></button></div>' +
     '<div class=filters hidden><button class=f data-f=all aria-pressed=true>Tudo</button>' +
     '<button class=f data-f=a aria-pressed=false>Atividades</button><button class=f data-f=s aria-pressed=false>Stand</button></div>' +
-    '<div id=panel></div></main>' +
+    '<div id=panel></div></section><section id=noticias hidden></section></main>' +
     '<footer><p>Feito com <span style=color:var(--p)>♥</span> pela <a href=https://ascom.cin.ufpe.br/>ASCOM CIn</a></p>' +
     '<p>Não nos responsabilizamos por eventuais mudanças na programação do REC\'n\'Play.</p>' +
     '<p>Última atualização: <span id=up></span></p></footer>' +
@@ -131,6 +144,22 @@
       P.innerHTML = h || '<div class=empty><b>Nada por aqui</b><span>Nada neste filtro.</span></div>';
     }
 
+    var NT = r.getElementById("noticias"), TP = r.getElementById("tab-prog"), TN = r.getElementById("tab-news"), SP = r.getElementById("programa");
+    function RN() {
+      NT.innerHTML = N.length ? N.map(function (n) {
+        return '<article class=news><div class=news-img><img src="' + n.img + '" alt="' + n.t + '" loading=lazy></div><div><div class=news-date>' + n.dt + '</div><h3>' + n.t + '</h3><p class=news-sub>' + n.s + '</p><p class=news-text>' + n.x + '</p></div></article>';
+      }).join("") : '<div class=empty><b>Nenhuma notícia ainda</b><span>As novidades aparecerão aqui.</span></div>';
+    }
+    function SV(v) {
+      SP.hidden = v;
+      NT.hidden = !v;
+      TP.setAttribute("aria-pressed", !v);
+      TN.setAttribute("aria-pressed", v);
+    }
+    TP.onclick = function () { SV(false); };
+    TN.onclick = function () { SV(true); };
+    RN();
+
     Ds.forEach(function (b) {
       b.onclick = function () {
         s = s == b.dataset.d ? null : b.dataset.d;
@@ -162,7 +191,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 10:20";
+    r.getElementById("up").textContent = "09/11/2026, 10:41";
     R();
   }
 

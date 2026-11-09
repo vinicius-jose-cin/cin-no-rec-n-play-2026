@@ -52,6 +52,25 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 - `.nojekyll` — evita o processamento do Jekyll no Pages.
 - `README.md` — este documento.
 
+## Notícias
+
+A aba **Notícias** é alimentada pelo array `N`, no topo de
+`cin-recplay-2026.js`:
+
+```js
+{ t:"Título", s:"Subtítulo", dt:"DD/MM/AAAA, HH:MM",
+  img:"imagem.png", x:"Texto da notícia" }
+```
+
+- `t`: título.
+- `s`: subtítulo.
+- `dt`: data e hora.
+- `img`: caminho da imagem no repositório.
+- `x`: texto; use `\n` para quebrar linha.
+
+O item atual é um exemplo sobre o mapa do stand. Basta substituir ou
+adicionar novos objetos no array.
+
 ## Compartilhamento (OpenGraph)
 
 O `index.html` aponta para `og.png` com título, descrição e dimensões. As URLs
