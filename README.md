@@ -43,8 +43,8 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 ## Arquivos publicados
 
 - `index.html` — prévia do site no GitHub Pages, com metadados OpenGraph.
-- `cin-recplay-2026.js` — site completo. Carrega Space Grotesk e Anton do Google
-  Fonts (fallbacks sans/Impact); não usa bibliotecas externas.
+- `cin-recplay-2026.js` — site completo. Carrega a fonte Space Grotesk do
+  Google Fonts (fallback sans); não usa bibliotecas externas.
 - `og.png` — imagem de compartilhamento 1200×630 (WhatsApp, redes sociais).
 - `favicon.svg` — favicon vetorial com o símbolo do CIn no gradiente.
 - `favicon-32.png` e `apple-touch-icon.png` — fallbacks para navegadores e iOS.
