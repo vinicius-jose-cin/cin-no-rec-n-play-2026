@@ -1,6 +1,24 @@
 (function () {
   "use strict";
 
+  // Dias do evento: cada dia vale 24h a partir de "ini" (horário de Brasília).
+  var DIAS = [
+    { d: "11", ini: "2026-11-11T00:00:00-03:00" },
+    { d: "12", ini: "2026-11-12T00:00:00-03:00" },
+    { d: "13", ini: "2026-11-13T00:00:00-03:00" },
+    { d: "14", ini: "2026-11-14T00:00:00-03:00" }
+  ];
+
+  // Dia selecionado automaticamente: dentro do evento, o dia corrente;
+  // antes do evento, nenhum; depois do último dia, o último dia.
+  function diaAtual(agora) {
+    var t = agora.getTime(), sel = null;
+    DIAS.forEach(function (x) {
+      if (t >= new Date(x.ini).getTime()) sel = x.d;
+    });
+    return sel;
+  }
+
   var A = [
     { t:0, n:"Dirigindo entre dois mundos: experiências automotivas do futuro", p:["Francisco Simões","João Marcelo Teixeira","João Moizes"], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Mobilidade","Tecnologia"], d:["11","12"] },
     { t:0, n:"IA e a nova geração de devs", p:["Giordano Cabral","Pedro Heimann","Josiane Assis"], h:"11:00–12:00", l:"Espaço Educa REC'n'Play · Paço Alfândega", q:"Paço Alfândega, R. Alfândega, 35, Recife - PE", g:["IA","Educação"], d:["11"] },
@@ -138,10 +156,10 @@
     '<div class=w><header><div class=brand><span class=cn>CIn no</span>' + L + '</div></header>' +
     '<section class=hero><div><p class=k>CIn-UFPE no REC\'n\'Play 2026 · 11–14 NOV · Recife</p><h1>O futuro<br>nasce<br><em>aqui.</em></h1><button class=mapbtn id=mapbtn aria-haspopup=dialog aria-expanded=false><svg viewBox="0 0 24 24" aria-hidden=true><use href="#i-p"/></svg>Mapa do Stand</button></div><i class=star></i></section>' +
     '<main><div class=vtabs><button class=vtab id=tab-prog aria-pressed=true>Programação</button><button class=vtab id=tab-news aria-pressed=false>Notícias</button></div><section id=programa><div class=days>' +
-    '<button class=day data-d=11 data-fim="2026-11-11T23:59:59-03:00"><b>11</b><span>QUA</span></button>' +
-    '<button class=day data-d=12 data-fim="2026-11-12T23:59:59-03:00"><b>12</b><span>QUI</span></button>' +
-    '<button class=day data-d=13 data-fim="2026-11-13T23:59:59-03:00"><b>13</b><span>SEX</span></button>' +
-    '<button class=day data-d=14 data-fim="2026-11-14T23:59:59-03:00"><b>14</b><span>SÁB</span></button></div>' +
+    '<button class=day data-d=11><b>11</b><span>QUA</span></button>' +
+    '<button class=day data-d=12><b>12</b><span>QUI</span></button>' +
+    '<button class=day data-d=13><b>13</b><span>SEX</span></button>' +
+    '<button class=day data-d=14><b>14</b><span>SÁB</span></button></div>' +
     '<div class=filters hidden><button class=f data-f=all aria-pressed=true>Tudo</button>' +
     '<button class=f data-f=a aria-pressed=false>Atividades</button><button class=f data-f=s aria-pressed=false>Stand</button></div>' +
     '<div id=panel></div></section><section id=noticias hidden></section></main>' +
@@ -230,16 +248,11 @@
         R();
       };
     });
-    // Seleciona automaticamente o dia de hoje; fora do período, o último dia já encerrado.
+    // Seleciona automaticamente o dia de hoje (ou o último dia já ocorrido).
     (function () {
-      var n = new Date(), p = null;
-      Ds.forEach(function (b) {
-        var f = b.getAttribute("data-fim");
-        if (!f || n <= new Date(f)) return;
-        if (!p || new Date(f) > new Date(p.getAttribute("data-fim"))) p = b;
-      });
-      if (!p) return;
-      s = p.dataset.d;
+      var d = diaAtual(new Date());
+      if (!d) return;
+      s = d;
       Ds.forEach(function (x) { x.setAttribute("aria-selected", x.dataset.d == s); });
       R();
     })();
