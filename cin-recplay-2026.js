@@ -10,9 +10,9 @@
   ];
 
   // Dia selecionado automaticamente: dentro do evento, o dia corrente;
-  // antes do evento, nenhum; depois do último dia, o último dia.
+  // antes do evento, o primeiro dia (pré-seleção); depois do último, o último dia.
   function diaAtual(agora) {
-    var t = agora.getTime(), sel = null;
+    var t = agora.getTime(), sel = DIAS[0].d;
     DIAS.forEach(function (x) {
       if (t >= new Date(x.ini).getTime()) sel = x.d;
     });
