@@ -1,0 +1,60 @@
+name: Aprovação remota do preview
+
+on:
+  issue_comment:
+    types: [created]
+
+permissions:
+  statuses: write
+  pull-requests: write
+
+jobs:
+  decisao:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.issue.pull_request && github.event.comment.user.type == 'User' && (contains(toLower(github.event.comment.body), '/aprovar') || contains(toLower(github.event.comment.body), '/reprovar')) }}
+    steps:
+      - name: Verificar permissão do autor
+        id: perm
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          AUTHOR: ${{ github.event.comment.user.login }}
+        run: |
+          PERM=$(gh api "repos/$GITHUB_REPOSITORY/collaborators/$AUTHOR/permission" --jq '.permission' 2>/dev/null || echo "none")
+          echo "perm=$PERM" >> "$GITHUB_OUTPUT"
+          case "$PERM" in
+            admin|maintain|write) echo "allowed=true" >> "$GITHUB_OUTPUT" ;;
+            *) echo "allowed=false" >> "$GITHUB_OUTPUT" ;;
+          esac
+
+      - name: Registrar aprovação/reprovação
+        if: steps.perm.outputs.allowed == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ github.event.issue.number }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+          AUTHOR: ${{ github.event.comment.user.login }}
+          BODY: ${{ github.event.comment.body }}
+        run: |
+          set -e
+          if printf '%s' "$BODY" | grep -qi '/aprovar'; then
+            STATE=success; EMOJI=✅; WORD=aprovado
+          else
+            STATE=failure; EMOJI=❌; WORD=reprovado
+          fi
+          SHA=$(gh api "repos/$GITHUB_REPOSITORY/pulls/$PR_NUMBER" --jq '.head.sha')
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$SHA" \
+            -f state="$STATE" \
+            -f context="site-preview/approval" \
+            -f description="Preview $WORD por @$AUTHOR" \
+            -f target_url="${{ github.server_url }}/${{ github.repository }}/pull/${{ github.event.issue.number }}"
+          gh api -X POST "repos/$GITHUB_REPOSITORY/issues/comments/$COMMENT_ID/replies" \
+            -f body="$EMOJI Preview **$WORD** por @$AUTHOR. O check \`site-preview/approval\` foi atualizado para \`$STATE\`."
+
+      - name: Autor sem permissão
+        if: steps.perm.outputs.allowed == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          COMMENT_ID: ${{ github.event.comment.id }}
+        run: |
+          gh api -X POST "repos/$GITHUB_REPOSITORY/issues/comments/$COMMENT_ID/replies" \
+            -f body="⛔ Apenas colaboradores com permissão de escrita no repositório podem aprovar ou reprovar o preview."

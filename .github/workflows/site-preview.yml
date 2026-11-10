@@ -1,0 +1,150 @@
+name: Agente de teste de sites
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches-ignore: [main, site-preview]
+  workflow_dispatch:
+    inputs:
+      ref:
+        description: Branch, tag ou SHA para testar
+        required: true
+        type: string
+
+permissions:
+  contents: write
+  pull-requests: write
+  statuses: write
+
+concurrency:
+  group: site-preview-${{ github.event.pull_request.number || github.ref_name || github.sha }}
+  cancel-in-progress: true
+
+env:
+  PORT: 8123
+  PREVIEW_BRANCH: site-preview
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Resolve ref
+        id: ref
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            echo "sha=${{ github.event.pull_request.merge_commit_sha }}" >> "$GITHUB_OUTPUT"
+            echo "label=${{ github.event.pull_request.head.ref }}" >> "$GITHUB_OUTPUT"
+            echo "pr=${{ github.event.pull_request.number }}" >> "$GITHUB_OUTPUT"
+            echo "fork=${{ github.event.pull_request.head.repo.full_name != github.repository }}" >> "$GITHUB_OUTPUT"
+          elif [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            echo "sha=${{ github.event.inputs.ref }}" >> "$GITHUB_OUTPUT"
+            echo "label=${{ github.event.inputs.ref }}" >> "$GITHUB_OUTPUT"
+            echo "pr=" >> "$GITHUB_OUTPUT"
+            echo "fork=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "sha=${{ github.sha }}" >> "$GITHUB_OUTPUT"
+            echo "label=${{ github.ref_name }}" >> "$GITHUB_OUTPUT"
+            echo "pr=" >> "$GITHUB_OUTPUT"
+            echo "fork=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Checkout do ref
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ steps.ref.outputs.sha }}
+          fetch-depth: 0
+
+      - name: Servir site localmente
+        run: |
+          nohup python3 -m http.server "$PORT" --bind 127.0.0.1 >/tmp/http.log 2>&1 &
+          for i in $(seq 1 30); do
+            curl -sf "http://127.0.0.1:$PORT/" >/dev/null && break
+            sleep 0.5
+          done
+          curl -sf "http://127.0.0.1:$PORT/" >/dev/null
+
+      - name: Instalar Playwright
+        run: |
+          mkdir -p /tmp/pw && cd /tmp/pw
+          npm init -y >/dev/null
+          npm i playwright >/dev/null
+          npx playwright install --with-deps chromium
+
+      - name: Executar agente de teste
+        env:
+          GITHUB_SHA: ${{ steps.ref.outputs.sha }}
+          GITHUB_REF: ${{ steps.ref.outputs.label }}
+        run: |
+          NODE_PATH=/tmp/pw/node_modules node .github/scripts/site_preview.js \
+            --base-url "http://127.0.0.1:$PORT" --out-dir preview --max-pages 30
+
+      - name: Resumo do run
+        run: |
+          NODE_PATH=/tmp/pw/node_modules node .github/scripts/render_summary.js
+
+      - name: Gerar comentário do PR
+        if: steps.ref.outputs.pr != '' && steps.ref.outputs.fork == 'false'
+        env:
+          PR_NUMBER: ${{ steps.ref.outputs.pr }}
+          BRANCH: ${{ steps.ref.outputs.label }}
+          SHA: ${{ steps.ref.outputs.sha }}
+          PREVIEW_BRANCH: site-preview
+          OUT: /tmp/comment.md
+        run: |
+          NODE_PATH=/tmp/pw/node_modules node .github/scripts/render_comment.js
+
+      - name: Upload dos screenshots
+        uses: actions/upload-artifact@v4
+        with:
+          name: site-preview-pr${{ steps.ref.outputs.pr }}-${{ steps.ref.outputs.label }}
+          path: preview/
+          retention-days: 14
+
+      - name: Publicar screenshots e comentar no PR
+        if: steps.ref.outputs.pr != '' && steps.ref.outputs.fork == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_NUMBER: ${{ steps.ref.outputs.pr }}
+          SHA: ${{ steps.ref.outputs.sha }}
+          PREVIEW_BRANCH: site-preview
+        run: |
+          set -e
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          if git ls-remote --exit-code origin "$PREVIEW_BRANCH" >/dev/null 2>&1; then
+            git fetch origin "$PREVIEW_BRANCH"
+            git checkout "$PREVIEW_BRANCH"
+          else
+            git checkout -b "$PREVIEW_BRANCH" origin/main
+          fi
+          rm -rf "pr-$PR_NUMBER"
+          mkdir -p "pr-$PR_NUMBER"
+          cp -r preview/shots "pr-$PR_NUMBER/shots"
+          cp preview/report.json "pr-$PR_NUMBER/report.json"
+          git add "pr-$PR_NUMBER"
+          git commit -m "preview: PR #$PR_NUMBER @ ${SHA:0:7}" || true
+          git push origin "$PREVIEW_BRANCH"
+          EXISTING=$(gh api "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" --jq '.[] | select(.body | contains("<!-- site-preview-agent -->")) | .id' | head -1)
+          if [ -n "$EXISTING" ]; then
+            gh api -X PATCH "repos/$GITHUB_REPOSITORY/issues/comments/$EXISTING" -f body=@/tmp/comment.md >/dev/null
+          else
+            gh api -X POST "repos/$GITHUB_REPOSITORY/issues/$PR_NUMBER/comments" -f body=@/tmp/comment.md >/dev/null
+          fi
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$SHA" \
+            -f state=pending \
+            -f context="site-preview/approval" \
+            -f description="Preview pronto; aguardando aprovação remota (/aprovar ou /reprovar neste PR)" \
+            -f target_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
+
+      - name: Marcar status pendente na branch
+        if: steps.ref.outputs.pr == '' && steps.ref.outputs.fork == 'false'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SHA: ${{ steps.ref.outputs.sha }}
+        run: |
+          gh api -X POST "repos/$GITHUB_REPOSITORY/statuses/$SHA" \
+            -f state=pending \
+            -f context="site-preview/approval" \
+            -f description="Preview gerado neste run; abra um PR para aprovação remota" \
+            -f target_url="${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
