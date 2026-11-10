@@ -68,6 +68,28 @@
 
   var N = [
     {
+      slug:"mulheres-que-abriram-caminho",
+      t:"Roda de conversa reúne lideranças femininas para discutir caminhos profissionais na tecnologia no REC’n’Play",
+      s:"Encontro discutirá representatividade, desafios e oportunidades na construção de carreiras em tecnologia",
+      dt:"10/11/2026, 15:32",
+      img:"",
+      url:"/noticias/mulheres-que-abriram-caminho/",
+      x:"No dia 11 de novembro, das 18h às 19h, na Galeria da Livraria Jaqueira, lideranças da NTT DATA Brasil e da Accenture Brasil participam de roda de conversa mediada pelo CITi, empresa júnior vinculada ao CIn-UFPE.",
+      html:`<p>Quais caminhos levam uma mulher a ocupar cargos de liderança em grandes empresas de tecnologia? Para discutir as escolhas, os desafios e os aprendizados envolvidos nessa trajetória, o REC’n’Play promove a roda de conversa “Da primeira oportunidade à liderança: mulheres que abriram caminho”. A atividade acontece no dia 11 de novembro, das 18h às 19h, na Galeria da Livraria Jaqueira, e será aberta ao público.</p>
+<p>O encontro propõe uma troca de experiências entre mulheres que construíram carreiras em diferentes espaços do setor de tecnologia e hoje ocupam posições de liderança. Durante a conversa, serão compartilhadas histórias sobre o início da vida profissional, escolhas de carreira, momentos de dúvida, obstáculos, conquistas e aprendizados que marcaram suas trajetórias.</p>
+<p>Participam do debate Virgínia Heimann, diretora na NTT DATA Brasil, e Melissa Paula Namizaki Dezan, diretora na Accenture Brasil. A mediação será realizada por Maria Clara Barroso, diretora de Gente e Gestão no Centro Integrado de Tecnologia da Informação (CITi), empresa júnior de tecnologia vinculada ao CIn-UFPE.</p>
+<p>A proposta é ampliar a discussão sobre representatividade feminina nos espaços de tecnologia e inovação, aproximando o público de experiências reais de liderança. Ao apresentar diferentes percursos profissionais, a roda de conversa busca mostrar que não existe uma trajetória única para alcançar posições de destaque e que as oportunidades, as redes de apoio e os desafios também fazem parte da construção de uma carreira de impacto.</p>
+<p>Além de compartilhar vivências, a atividade pretende inspirar estudantes e profissionais que estão iniciando sua trajetória ou buscando novos caminhos na área, incentivando reflexões sobre o futuro da participação feminina no mercado de tecnologia.</p>
+<h2>Sobre o CITi</h2>
+<p>O CITi, Centro Integrado de Tecnologia da Informação, é a empresa júnior do CIn-UFPE, que surgiu com o propósito de oferecer um espaço de aprendizado prático de software e de mercado para os alunos da Universidade. Hoje, o CITi atua como uma consultoria especializada em Inteligência Artificial e Inovação, trazendo uma vivência empresarial única para os membros, através do contato com empresas, problemas e soluções reais. O objetivo final da empresa júnior é ser um ponto de contato entre o mercado e a universidade.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival 100% gratuito que transforma o Bairro do Recife em um grande palco de inovação, criatividade e conexões. Durante quatro dias intensos de programação, o REC’n’Play reúne pessoas, negócios e conhecimento em uma experiência imersiva e colaborativa. Com centenas de atividades, o evento abrange cinco grandes eixos temáticos: Tecnologia; Negócios; Criatividade e Mídias; Cidade e Sustentabilidade; e Cultura e Sociedade.</p>
+<p>Informações sobre a programação e inscrição no festival podem ser acessadas em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    },
+    {
       slug:"supertalentos",
       t:"Conheça a iniciativa do CIn-UFPE para desenvolver jovens com superdotação intelectual",
       s:"No REC’n’Play 2026, instituição apresentará o Programa Supertalentos, que oferece formação científica gratuita a jovens com superdotação intelectual",
@@ -281,7 +303,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "10/11/2026, 13:40";
+    r.getElementById("up").textContent = "10/11/2026, 15:32";
     R();
   }
 
