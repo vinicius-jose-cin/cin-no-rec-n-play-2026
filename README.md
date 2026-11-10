@@ -5,17 +5,6 @@ Programação do CIn-UFPE no REC'n'Play 2026 — 11 a 14 de novembro, Recife.
 - **Site:** https://recnplay.cin.ufpe.br/
 - **Script:** https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 
-## Usar no Google Sites
-
-Inserir → Embed → Código de incorporação:
-
-```html
-<script src="https://recnplay.cin.ufpe.br/cin-recplay-2026.js"></script>
-```
-
-O bloco de embed do Google Sites tem altura fixa; para a programação completa,
-o ideal é abrir o site em uma aba própria (link/botão) em vez de embutir.
-
 ## Domínio próprio (`cin.ufpe.br`)
 
 O GitHub Pages só exige um **CNAME no subdomínio**, sem TXT no apex `ufpe.br`.
@@ -42,10 +31,16 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 
 ## Arquivos publicados
 
-- `index.html` — prévia do site no GitHub Pages, com metadados OpenGraph.
-- `cin-recplay-2026.js` — site completo. Carrega Space Grotesk e Barlow
-  Condensed do Google Fonts (fallbacks sans/Impact); não usa bibliotecas
-  externas.
+- `index.html` — página principal, com metadados OpenGraph. Carrega os
+  scripts na ordem: `dados/dias.js`, `dados/atividades.js`,
+  `dados/noticias.js`, `estilo.js` e `cin-recplay-2026.js`.
+- `dados/dias.js` — dias do evento (`CIN26.DIAS`).
+- `dados/atividades.js` — programação (`CIN26.A`): atividades e stand.
+- `dados/noticias.js` — notícias (`CIN26.N`), com o HTML completo de cada uma.
+- `estilo.js` — logo SVG, CSS e template HTML (`CIN26.L`, `CIN26.CSS`, `CIN26.T`).
+- `cin-recplay-2026.js` — apenas o render: lê `window.CIN26` e monta o site.
+  Carrega Space Grotesk e Barlow Condensed do Google Fonts (fallbacks
+  sans/Impact); não usa bibliotecas externas.
 - `og.png` — imagem de compartilhamento 1200×630 (WhatsApp, redes sociais).
 - `favicon.svg` — círculo com o gradiente e o símbolo do CIn em branco.
 - `favicon-32.png` e `apple-touch-icon.png` — fallbacks para navegadores e iOS.
@@ -56,8 +51,7 @@ https://recnplay.cin.ufpe.br/cin-recplay-2026.js
 
 ## Notícias
 
-A aba **Notícias** é alimentada pelo array `N`, no topo de
-`cin-recplay-2026.js`:
+A aba **Notícias** é alimentada pelo array `N`, em `dados/noticias.js`:
 
 ```js
 { slug:"supertalentos",
@@ -78,7 +72,8 @@ A aba **Notícias** é alimentada pelo array `N`, no topo de
 - `html`: conteúdo completo em HTML.
 
 Cada notícia tem uma subpágina em `noticias/<slug>/index.html`, com
-`<html data-news="<slug>">`, carregando `../../cin-recplay-2026.js`. O exemplo
+`<html data-news="<slug>">`, carregando os mesmos scripts com prefixo `../../`
+(`dados/`, `estilo.js` e `cin-recplay-2026.js`). O exemplo
 pronto é `noticias/supertalentos/`.
 
 ## Compartilhamento (OpenGraph)
@@ -93,5 +88,12 @@ Debugger para forçar nova leitura.
 
 ## Atualizar
 
-Edite `cin-recplay-2026.js` neste repositório e faça commit. O GitHub Pages
-republica automaticamente na branch `main`.
+Edite os arquivos deste repositório e faça commit na `main` — o GitHub Pages
+republica automaticamente:
+
+- programação e dias: `dados/atividades.js` e `dados/dias.js`;
+- notícias: `dados/noticias.js` (e a subpágina correspondente em `noticias/`);
+- visual (CSS, template, logo): `estilo.js`;
+- lógica de exibição: `cin-recplay-2026.js`.
+
+Ao mudar qualquer script, suba a versão do `?v=` nos HTMLs para evitar cache.
