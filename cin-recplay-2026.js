@@ -26,6 +26,7 @@
     { t:0, n:"Fluência em IA para empresas: como se manter sempre à frente na corrida tecnológica?", p:["Giordano Cabral","Filipe Calegario","Rafael Palermo"], h:"10:00–11:00", l:"CESAR School · Bloco A, Arquibancada", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
     { t:0, n:"Como construir um plano estratégico de IA para meu negócio", p:["Germano Vasconcelos","Geber Ramalho","Giordano Cabral"], h:"12:40–13:40", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
     { t:0, n:"Debug Arena", p:["André Bartholomeu","Nathanael Silva","Douglas Silva"], h:"13:20–16:20", l:"UNIAESO · LAB", q:"UNIAESO, Rua do Bom Jesus, 137, Recife - PE", g:["Engenharia de Software","Games"], d:["13"] },
+    { t:0, n:"Como a IA está transformando a Engenharia de Software?", p:["Paulo Borba","Rodrigo Bonifácio"], h:"14:00–14:45", l:"Ponto BB · Palco BBDW", q:"Ponto BB - Palco BBDW, Av. Rio Branco, 240, Recife - PE", g:["IA","Engenharia de Software"], d:["13"] },
     { t:1, n:"Live", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11"] },
     { t:1, n:"SEAL", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11"] },
     { t:1, n:"LAJE", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Games"], d:["11"] },
@@ -181,7 +182,11 @@
         return;
       }
       F.hidden = false;
-      var a = A.filter(function (x) { return x.d.indexOf(s) > -1; });
+      var m = function (x) {
+        var b = String(x.h || "").split("–")[0].split("-")[0].replace(/\D/g, "");
+        return b ? parseInt(b, 10) : 9999;
+      };
+      var a = A.filter(function (x) { return x.d.indexOf(s) > -1; }).sort(function (x, y) { return (x.t ? 1 : 0) - (y.t ? 1 : 0) || m(x) - m(y); });
       var l = f == "all" ? a : a.filter(function (x) { return f == "a" ? !x.t : !!x.t; });
       var h = "";
       if (l.some(function (x) { return !x.t; })) h += G(0, l.filter(function (x) { return !x.t; }));
@@ -249,7 +254,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "09/11/2026, 13:23";
+    r.getElementById("up").textContent = "10/11/2026, 13:40";
     R();
   }
 
