@@ -68,10 +68,51 @@
 
   var N = [
     {
+      slug:"gambiarra-llm-club",
+      t:"Gambiarra LLM Club demonstra como criar Inteligência Artificial caseira no REC’n’Play 2026",
+      s:"Equipe criada no CIn-UFPE fará roda de conversa no dia 11 de novembro, às 16h40, no Bloco B do Cesar School",
+      dt:"10/11/2026, 16:07",
+      by:"Letícia Costa",
+      img:"",
+      url:"/noticias/gambiarra-llm-club/",
+      x:"No dia 11 de novembro, às 16h40, no Bloco B do Cesar School, integrantes do primeiro clube de LLMs caseiros do Brasil demonstram as plataformas Gambiarra Arena e Gambi e conversam sobre rodar modelos de IA no próprio computador.",
+      html:`<p>Já pensou em rodar modelos de Inteligência Artificial (IA) no seu próprio computador, sem nuvem e sem mensalidade? No REC’n’Play 2026, integrantes do Gambiarra LLM Club do Centro de Informática (CIn) da UFPE explicarão como isso é possível durante a roda de conversa “Gambiarra LLM Club: demonstração e conversa sobre IA caseira”. O evento acontece no dia 11 de novembro, às 16h40, nas salas 001 e 002 do Bloco B do Cesar School.</p>
+<p>Os integrantes do primeiro clube de Large Language Models (LLM) caseiros do Brasil demonstrarão as duas plataformas que nasceram a partir de seus trabalhos, a Gambiarra Arena e o Gambi. Eles conversarão sobre os bastidores do grupo, além de sanar dúvidas sobre a IA sem nuvem. O coordenador do grupo, docente do CIn e curador do REC’n’Play, Filipe Calegario, explica que a roda de conversa será um espaço para quem tem curiosidade em rodar modelos de linguagem localmente, no próprio computador, mesmo sem experiência prévia.</p>
+<p>“O nome gambiarra vem como solução criativa diante de limitações de recursos, uma forma legítima de fazer tecnologia quando se trata de reapropriar ferramentas, de driblar a escassez e de experimentar fora dos circuitos hegemônicos. Rodar LLMs localmente, afinando prompts, contextos e harnesses na unha e fazendo milagre com pouca VRAM, é exatamente esse tipo de prática: criativa, resiliente e cheia de humor”, destaca Filipe Calegario.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival 100% gratuito que transforma o Bairro do Recife em um grande palco de inovação, criatividade e conexões. Durante quatro dias intensos de programação, o REC’n’Play reúne pessoas, negócios e conhecimento em uma experiência imersiva e colaborativa. Com centenas de atividades, o evento abrange cinco grandes eixos temáticos: Tecnologia; Negócios; Criatividade e Mídias; Cidade e Sustentabilidade; e Cultura e Sociedade.</p>
+<p>Informações sobre a programação e inscrição no festival podem ser acessadas em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o Gambiarra LLM Club</h2>
+<p>O Gambiarra LLM Club é inspirado no Homebrew Computer Club, o lendário clube de hobbistas que construíam seus próprios computadores na época dos mainframes. A equipe reúne entusiastas que rodam modelos de linguagem localmente, ajustando as configurações para alcançar o melhor resultado possível, com criatividade e engenhosidade. Mais informações: <a href="https://gambiarra.club/" target="_blank" rel="noopener">gambiarra.club</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    },
+    {
+      slug:"copiloto-ou-piloto",
+      t:"Pesquisadores do CIn-UFPE levam debate sobre autonomia do programador no contexto da IA para o REC’n’Play 2026",
+      s:"Roda de conversa abordará o impacto dos agentes inteligentes no aprendizado de estudantes e desenvolvedores",
+      dt:"10/11/2026, 16:07",
+      by:"Letícia Costa",
+      img:"",
+      url:"/noticias/copiloto-ou-piloto/",
+      x:"No dia 13 de novembro, às 10h, na sala 3 do prédio E.T.E. Porto Digital, os professores e pesquisadores Kiev Gama, Vinicius Garcia, Rodrigo Bonifácio e Paola Accioly debatem os ganhos e as perdas de programar com apoio de IA.",
+      html:`<p>No terceiro dia do REC’n’Play 2026, o Centro de Informática (CIn) da UFPE colocará em pauta a autonomia do programador no contexto atual da Inteligência Artificial (IA). A roda de conversa “Copiloto ou piloto? Até onde a IA pode pensar no lugar de quem programa” terá como participantes os professores e pesquisadores Kiev Gama, Vinicius Garcia, Rodrigo Bonifácio e Paola Accioly. O evento acontece no dia 13 de novembro, às 10h, na sala 3 do prédio E.T.E. Porto Digital.</p>
+<p>A mesa redonda será um momento de debate e troca de experiências reais sobre os ganhos e as perdas de programar com apoio de inteligência artificial, tanto na universidade quanto no ambiente de trabalho. “Os modelos de linguagem que utilizamos, como Copilot, Codex e Claude Code, trazem grandes vantagens e aceleram o trabalho, mas muitas coisas estão deixando de ser aprendidas”, explica o professor Kiev Gama.</p>
+<p>O pesquisador acrescenta que, na área de desenvolvimento de software, o uso de IA permite que os estudantes entreguem mais trabalhos em uma maior velocidade, mas sem compreender com totalidade ou sem saber explicar a estrutura produzida. Além disso, pesquisadores vêm discutindo o “débito cognitivo” que a IA está trazendo.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival 100% gratuito que transforma o Bairro do Recife em um grande palco de inovação, criatividade e conexões. Durante quatro dias intensos de programação, o REC’n’Play reúne pessoas, negócios e conhecimento em uma experiência imersiva e colaborativa. Com centenas de atividades, o evento abrange cinco grandes eixos temáticos: Tecnologia; Negócios; Criatividade e Mídias; Cidade e Sustentabilidade; e Cultura e Sociedade.</p>
+<p>Informações sobre a programação e inscrição no festival podem ser acessadas em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    },
+    {
       slug:"mulheres-que-abriram-caminho",
       t:"Roda de conversa reúne lideranças femininas para discutir caminhos profissionais na tecnologia no REC’n’Play",
       s:"Encontro discutirá representatividade, desafios e oportunidades na construção de carreiras em tecnologia",
       dt:"10/11/2026, 15:32",
+      by:"Maria Eduarda Fernando da Silva",
       img:"",
       url:"/noticias/mulheres-que-abriram-caminho/",
       x:"No dia 11 de novembro, das 18h às 19h, na Galeria da Livraria Jaqueira, lideranças da NTT DATA Brasil e da Accenture Brasil participam de roda de conversa mediada pelo CITi, empresa júnior vinculada ao CIn-UFPE.",
@@ -94,6 +135,7 @@
       t:"Conheça a iniciativa do CIn-UFPE para desenvolver jovens com superdotação intelectual",
       s:"No REC’n’Play 2026, instituição apresentará o Programa Supertalentos, que oferece formação científica gratuita a jovens com superdotação intelectual",
       dt:"09/11/2026, 10:55",
+      by:"Letícia Costa",
       img:"",
       url:"/noticias/supertalentos/",
       x:"O CIn-UFPE apresentará o Programa Supertalentos no REC’n’Play 2026, com debate, pitches e mostra nos dias 12 e 13 de novembro.",
@@ -142,11 +184,12 @@
     ".news{display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:24px;background:linear-gradient(#0b0b0b,#080808) padding-box,var(--c) border-box;border:1px solid transparent;border-radius:12px;padding:20px;margin:0 0 18px}.news.noimg{grid-template-columns:1fr}" +
     ".news-img{display:flex;align-items:center;justify-content:center;background:#0b0b0b;border-radius:8px;overflow:hidden}.news-img img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}" +
     ".news-date{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin-bottom:8px}" +
+    ".news-by{font:500 12px var(--m);color:var(--u);margin:0 0 8px}" +
     ".news h3{font:700 clamp(24px,3vw,32px)/1.06 'Barlow Condensed',Impact,sans-serif;margin:0 0 8px}" +
     ".news-sub{font:600 16px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 12px}" +
     ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}.news h3 a{color:inherit;text-decoration:none}.news h3 a:hover{background:var(--c);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}.news-link{display:inline-block;margin-top:14px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.news-img{text-decoration:none}" +
     ".art .hero,.art .vtabs,.art #programa{display:none}.art main{padding-top:36px}.art #noticias{display:block}" +
-    ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:700 clamp(30px,4.6vw,46px)/1.05 'Barlow Condensed',Impact,sans-serif;margin:0 0 12px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:700 clamp(24px,3vw,34px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
+    ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:700 clamp(30px,4.6vw,46px)/1.05 'Barlow Condensed',Impact,sans-serif;margin:0 0 8px}.article-by{font:500 13px var(--m);color:var(--u);margin:0 0 14px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:700 clamp(24px,3vw,34px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
     ".days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}" +
     ".day{text-align:left;background:#0c0c0c;border:1px solid #fff2;border-radius:10px;padding:14px;color:var(--k);cursor:pointer}" +
     ".day b{display:block;font:700 clamp(30px,4vw,44px)/1 'Barlow Condensed',Impact,sans-serif}" +
@@ -239,7 +282,7 @@
     function RN() {
       NT.innerHTML = N.length ? N.map(function (n) {
         var im = n.img ? '<a class=news-img href="' + n.url + '"><img src="' + n.img + '" alt="' + n.t + '" loading=lazy></a>' : '';
-        return '<article class="news' + (n.img ? '' : ' noimg') + '">' + im + '<div><div class=news-date>' + n.dt + '</div><h3><a href="' + n.url + '">' + n.t + '</a></h3><p class=news-sub>' + n.s + '</p><p class=news-text>' + n.x + '</p><a class=news-link href="' + n.url + '">Ler notícia →</a></div></article>';
+        return '<article class="news' + (n.img ? '' : ' noimg') + '">' + im + '<div><div class=news-date>' + n.dt + '</div><h3><a href="' + n.url + '">' + n.t + '</a></h3>' + (n.by ? '<p class=news-by>Texto: ' + n.by + '</p>' : '') + '<p class=news-sub>' + n.s + '</p><p class=news-text>' + n.x + '</p><a class=news-link href="' + n.url + '">Ler notícia →</a></div></article>';
       }).join("") : '<div class=empty><b>Nenhuma notícia ainda</b><span>As novidades aparecerão aqui.</span></div>';
     }
     function SV(v) {
@@ -252,7 +295,7 @@
     TN.onclick = function () { SV(true); };
     var ART = document.documentElement.getAttribute("data-news");
     function RA(n) {
-      return '<article class=article><a class=back href="/">← Voltar para a programação</a>' + (n.img ? '<img class=article-img src="' + n.img + '" alt="' + n.t + '">' : '') + '<div class=article-meta>' + n.dt + '</div><h1 class=article-title>' + n.t + '</h1><p class=article-sub>' + n.s + '</p><div class=article-body>' + n.html + '</div></article>';
+      return '<article class=article><a class=back href="/">← Voltar para a programação</a>' + (n.img ? '<img class=article-img src="' + n.img + '" alt="' + n.t + '">' : '') + '<div class=article-meta>' + n.dt + '</div><h1 class=article-title>' + n.t + '</h1>' + (n.by ? '<p class=article-by>Texto: ' + n.by + '</p>' : '') + '<p class=article-sub>' + n.s + '</p><div class=article-body>' + n.html + '</div></article>';
     }
     if (ART) {
       var aa = N.filter(function (n) { return n.slug === ART; })[0];
@@ -303,7 +346,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "10/11/2026, 15:32";
+    r.getElementById("up").textContent = "10/11/2026, 16:07";
     R();
   }
 
