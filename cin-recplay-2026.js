@@ -69,8 +69,7 @@
       var st = status(a);
       return '<article class=card><div class=tags>' + a.g.map(function (g) { return "<span>" + g + "</span>"; }).join("") +
         "</div><h4>" + a.n + "</h4>" + (a.p.length ? '<p class=who><span class="mic u" role=img aria-label="Palestrantes"><svg aria-hidden="true"><use href="#i-u"/></svg></span><span class=pt>' + a.p.join(" · ") + "</span></p>" : "") +
-        '<div class=meta><span class="mic c" role=img aria-label="Horário"><svg aria-hidden="true"><use href="#i-c"/></svg></span>' + (a.h || "A confirmar") + '</div>' +
-        (st ? '<div class="st ' + st.k + '">' + st.x + '</div>' : "") +
+        '<div class=meta><span class="mic c" role=img aria-label="Horário"><svg aria-hidden="true"><use href="#i-c"/></svg></span>' + (a.h || "A confirmar") + (st ? '<span class="stb ' + st.k + '">' + st.x + '</span>' : '') + '</div>' +
         '<div class=meta><span class="mic p" role=img aria-label="Local"><svg aria-hidden="true"><use href="#i-p"/></svg></span><a class=map href="' + href + '" target=_blank rel=noopener>' + a.l + ' ↗</a></div></article>';
     };
     var G = function (t, l) {
