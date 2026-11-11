@@ -27,11 +27,50 @@
     var Ds = [...r.querySelectorAll(".day")], Fs = [...r.querySelectorAll(".f")];
     var s = null, f = "all";
 
+    function evtTimes(a, day) {
+      var D = DIAS.filter(function (x) { return x.d == day; })[0];
+      if (!D || !a.h) return null;
+      var parts = String(a.h).split(/[–-]/);
+      var hm = function (p) {
+        var m = String(p).replace(/\D/g, "");
+        return m.length >= 3 ? parseInt(m.slice(0, -2), 10) * 60 + parseInt(m.slice(-2), 10) : null;
+      };
+      var st = hm(parts[0]), en = hm(parts[1] || parts[0]);
+      if (st == null) return null;
+      var base = new Date(D.ini).getTime();
+      return { s: base + st * 60000, e: base + (en == null ? st + 60 : en) * 60000 };
+    }
+    function status(a) {
+      var t = s ? evtTimes(a, s) : null;
+      if (!t) return null;
+      var now = Date.now();
+      if (now < t.s) {
+        var d = Math.round((t.s - now) / 60000), hh = Math.floor(d / 60), mm = d % 60;
+        return { k: "soon", x: "Começa em " + (hh ? hh + "h" + (mm ? " " + mm + "min" : "") : mm + " min") };
+      }
+      if (now <= t.e) return { k: "now", x: "Agora" };
+      return { k: "done", x: "Encerrado" };
+    }
+    function TICK() {
+      var run = null;
+      A.forEach(function (a) {
+        if (!run && s && a.d.indexOf(s) > -1) { var st = status(a); if (st && st.k == "now") run = a; }
+      });
+      var msgs = ["Começou!!! Confira nosso stand no botão abaixo!", "Oi você, fique ligado nessa barrinha para as últimas atualizações das atividades do CIn no REC'n'Play!"];
+      if (run) msgs.unshift("Atividade rolando: " + run.n + " · " + run.l);
+      var one = '<span class=sep></span>' + msgs.join('<span class=sep></span>');
+      var tk = r.getElementById("track");
+      if (tk) tk.innerHTML = [0, 1, 2, 3].map(function (i) {
+        return '<span class=tick' + (i ? ' aria-hidden=true' : '') + '>' + one + '</span>';
+      }).join("");
+    }
     var C = function (a) {
       var href = a.u || ("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(a.q || a.l));
+      var st = status(a);
       return '<article class=card><div class=tags>' + a.g.map(function (g) { return "<span>" + g + "</span>"; }).join("") +
         "</div><h4>" + a.n + "</h4>" + (a.p.length ? '<p class=who><span class="mic u" role=img aria-label="Palestrantes"><svg aria-hidden="true"><use href="#i-u"/></svg></span><span class=pt>' + a.p.join(" · ") + "</span></p>" : "") +
         '<div class=meta><span class="mic c" role=img aria-label="Horário"><svg aria-hidden="true"><use href="#i-c"/></svg></span>' + (a.h || "A confirmar") + '</div>' +
+        (st ? '<div class="st ' + st.k + '">' + st.x + '</div>' : "") +
         '<div class=meta><span class="mic p" role=img aria-label="Local"><svg aria-hidden="true"><use href="#i-p"/></svg></span><a class=map href="' + href + '" target=_blank rel=noopener>' + a.l + ' ↗</a></div></article>';
     };
     var G = function (t, l) {
@@ -54,6 +93,7 @@
       if (l.some(function (x) { return !x.t; })) h += G(0, l.filter(function (x) { return !x.t; }));
       if (l.some(function (x) { return x.t; })) h += G(1, l.filter(function (x) { return x.t; }));
       P.innerHTML = h || '<div class=empty><b>Nada por aqui</b><span>Nada neste filtro.</span></div>';
+      TICK();
     }
 
     var NT = r.getElementById("noticias"), TP = r.getElementById("tab-prog"), TN = r.getElementById("tab-news"), SP = r.getElementById("programa");
@@ -126,6 +166,7 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
     r.getElementById("up").textContent = "11/11/2026, 10:30";
     r.getElementById("topbtn").onclick = function () { window.scrollTo({ top: 0, behavior: "smooth" }); };
+    setInterval(R, 60000);
     R();
   }
 
