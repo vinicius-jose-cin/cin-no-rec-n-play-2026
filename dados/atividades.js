@@ -2,6 +2,7 @@ window.CIN26 = window.CIN26 || {};
 
 window.CIN26.A = [
     { t:0, n:"Dirigindo entre dois mundos: experiências automotivas do futuro", p:["Francisco Simões","João Marcelo Teixeira","João Moizes"], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Mobilidade","Tecnologia"], d:["12"] },
+    { t:0, n:"Dirigindo entre dois mundos: experiências automotivas do futuro", p:["Francisco Simões","João Marcelo Teixeira","João Moizes"], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Mobilidade","Tecnologia"], d:["13"] },
     { t:0, n:"IA e a nova geração de devs", p:["Giordano Cabral","Pedro Heimann","Thiago Oliveira"], h:"11:00–12:00", l:"Espaço Educa REC'n'Play · Paço Alfândega", q:"Paço Alfândega, R. Alfândega, 35, Recife - PE", g:["IA","Educação"], d:["11"] },
     { t:0, n:"Muito além do networking: o poder das comunidades de tecnologia", p:["Larissa Cavalcanti","Elisa Santos","Lucas Ximenes","Italo Araújo"], h:"14:20–15:20", l:"E.T.E. Porto Digital · Sala 3", q:"E.T.E. Porto Digital, Av. Rio Branco, 193, Recife - PE", g:["Carreira","Comunidades"], d:["11"] },
     { t:0, n:"Empreendedorismo na universidade: formando quem transforma o futuro", p:["Daniel Fernandes","Ricardo Rocha","Gabriel Albuquerque"], h:"15:20–16:20", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["Empreendedorismo","Inovação"], d:["11"] },
