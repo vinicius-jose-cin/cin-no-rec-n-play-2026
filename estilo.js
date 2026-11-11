@@ -16,7 +16,7 @@ window.CIN26.CSS =
     "main{padding:0 4vw 48px}.sec{display:flex;align-items:center;gap:9px;font:700 11px var(--m);margin:0 0 18px}" +
     ".vtabs{display:flex;gap:26px;border-bottom:1px solid #fff2;margin:0 0 22px}" +
     ".vtab{background:none;border:0;border-bottom:2px solid transparent;margin-bottom:-1px;padding:0 0 12px;color:var(--u);font:600 15px var(--m);cursor:pointer;transition:.2s}.vtab[aria-pressed=true]{color:var(--k);border-color:var(--l)}" +
-    ".news{display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:24px;background:linear-gradient(#0b0b0b,#080808) padding-box,var(--c) border-box;border:1px solid transparent;border-radius:12px;padding:20px;margin:0 0 18px}.news.noimg{grid-template-columns:1fr}" +
+    ".news{display:grid;grid-template-columns:minmax(220px,40%) 1fr;gap:24px;background:linear-gradient(#0b0b0b,#080808) padding-box,var(--c) border-box;border:1px solid transparent;border-radius:12px;padding:20px;max-width:820px;margin:0 auto 18px}.news.noimg{grid-template-columns:1fr}" +
     ".news-img{display:flex;align-items:center;justify-content:center;background:#0b0b0b;border-radius:8px;overflow:hidden}.news-img img{display:block;width:100%;height:auto;max-height:340px;object-fit:contain}" +
     ".news-date{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin-bottom:8px}" +
     ".news-by{font:500 12px var(--m);color:var(--u);margin:0 0 8px}" +
@@ -50,7 +50,7 @@ window.CIN26.CSS =
     "footer{border-top:1px solid #fff2;padding:26px 4vw 34px;text-align:center;font-size:12px;color:#8f8880}footer a{color:#ec008c}" +
     ".sec,.gh h3,.hint b,.empty b,.day span,.k,.hero h1{text-transform:uppercase}" +
     "@media(max-width:640px){.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}}" +
-    "@media(max-width:700px){.news{grid-template-columns:1fr;gap:14px}.news-img img{max-height:none}}";
+    "@media(max-width:700px){.news{grid-template-columns:1fr;gap:12px;padding:16px}.news-img img{max-height:none}.news h3{font-size:22px}.news-sub{font-size:14px;margin-bottom:8px}.news-date{font-size:10px;margin-bottom:6px}.news-by{font-size:11px}.news-text{display:none}.news-link{margin-top:10px;font-size:11px}}";
 
 window.CIN26.T =
     '<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-u" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-c" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-p" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol></svg>' +
