@@ -52,9 +52,13 @@
       return { k: "done", x: "Encerrado" };
     }
     function TICK() {
-      var run = null;
+      var run = null, runT = 0;
       A.forEach(function (a) {
-        if (!run && s && a.d.indexOf(s) > -1) { var st = status(a); if (st && st.k == "now") run = a; }
+        if (!s || a.d.indexOf(s) < 0) return;
+        var st = status(a);
+        if (!st || st.k != "now") return;
+        var t = evtTimes(a, s);
+        if (t && t.s > runT) { runT = t.s; run = a; }
       });
       var msgs = ["Começou!!! Confira nosso stand no botão abaixo!", "Oi você, fique ligado nessa barrinha para as últimas atualizações das atividades do CIn no REC'n'Play!"];
       if (run) msgs.unshift("Atividade rolando: " + run.n + " · " + run.l);
@@ -163,7 +167,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "11/11/2026, 10:30";
+    r.getElementById("up").textContent = "11/11/2026, 11:38";
     r.getElementById("topbtn").onclick = function () { window.scrollTo({ top: 0, behavior: "smooth" }); };
     setInterval(R, 60000);
     R();
