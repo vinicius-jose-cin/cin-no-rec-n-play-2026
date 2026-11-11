@@ -49,7 +49,7 @@ window.CIN26.CSS =
     ".hint b,.empty b{display:block;font:700 clamp(22px,3vw,30px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin-bottom:8px}" +
     "footer{border-top:1px solid #fff2;padding:26px 4vw 34px;text-align:center;font-size:12px;color:#8f8880}footer a{color:#ec008c}" +
     ".sec,.gh h3,.hint b,.empty b,.day span,.k,.hero h1{text-transform:uppercase}" +
-    "@media(max-width:640px){.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}}" +
+    "@media(max-width:640px){header{justify-content:center}.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}}" +
     "@media(max-width:700px){.news{grid-template-columns:1fr;gap:12px;padding:16px}.news-img img{max-height:none}.news h3{font-size:22px}.news-sub{font-size:14px;margin-bottom:8px}.news-date{font-size:10px;margin-bottom:6px}.news-by{font-size:11px}.news-text{display:none}.news-link{margin-top:10px;font-size:11px}}";
 
 window.CIN26.T =
