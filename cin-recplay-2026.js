@@ -46,7 +46,7 @@
       var now = Date.now();
       if (now < t.s) {
         var d = Math.round((t.s - now) / 60000), hh = Math.floor(d / 60), mm = d % 60;
-        return { k: "soon", x: "Começa em " + (hh ? hh + "h" + (mm ? " " + mm + "min" : "") : mm + " min") };
+        return { k: "soon", x: "Em " + (hh ? hh + "h" + (mm ? " " + mm + "min" : "") : mm + " min") };
       }
       if (now <= t.e) return { k: "now", x: "Agora" };
       return { k: "done", x: "Encerrado" };
