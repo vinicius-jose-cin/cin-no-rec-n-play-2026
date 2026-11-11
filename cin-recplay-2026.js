@@ -28,11 +28,11 @@
     var s = null, f = "all";
 
     var C = function (a) {
-      var q = encodeURIComponent(a.q || a.l);
+      var href = a.u || ("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(a.q || a.l));
       return '<article class=card><div class=tags>' + a.g.map(function (g) { return "<span>" + g + "</span>"; }).join("") +
         "</div><h4>" + a.n + "</h4>" + (a.p.length ? '<p class=who><span class="mic u" role=img aria-label="Palestrantes"><svg aria-hidden="true"><use href="#i-u"/></svg></span><span class=pt>' + a.p.join(" · ") + "</span></p>" : "") +
         '<div class=meta><span class="mic c" role=img aria-label="Horário"><svg aria-hidden="true"><use href="#i-c"/></svg></span>' + (a.h || "A confirmar") + '</div>' +
-        '<div class=meta><span class="mic p" role=img aria-label="Local"><svg aria-hidden="true"><use href="#i-p"/></svg></span><a class=map href="https://www.google.com/maps/search/?api=1&amp;query=' + q + '" target=_blank rel=noopener>' + a.l + ' ↗</a></div></article>';
+        '<div class=meta><span class="mic p" role=img aria-label="Local"><svg aria-hidden="true"><use href="#i-p"/></svg></span><a class=map href="' + href + '" target=_blank rel=noopener>' + a.l + ' ↗</a></div></article>';
     };
     var G = function (t, l) {
       return '<section class=grp><div class=gh><h3>' + (t ? "Stand do CIn" : "Atividades") + '</h3></div><div class=cards>' + l.map(C).join("") + "</div></section>";
@@ -124,7 +124,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "11/11/2026, 09:58";
+    r.getElementById("up").textContent = "11/11/2026, 10:30";
     R();
   }
 
