@@ -60,7 +60,7 @@
         var t = evtTimes(a, s);
         if (t && t.s > runT) { runT = t.s; run = a; }
       });
-      var msgs = ["Começou!!! Confira nosso stand no botão abaixo!", "Oi você, fique ligado nessa barrinha para as últimas atualizações das atividades do CIn no REC'n'Play!"];
+      var msgs = ["🤩 AINDA TEM MUITO CIN NESSE REC'N'PLAY 🤩", "Novas notícias acabaram de dropar. Confira tudo que ainda vai rolar na aba Notícias."];
       if (run) msgs.unshift("Atividade rolando: " + run.n + " · " + run.l);
       var one = '<span class=sep></span>' + msgs.join('<span class=sep></span>');
       var tk = r.getElementById("track");
@@ -167,7 +167,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "11/11/2026, 15:57";
+    r.getElementById("up").textContent = "11/11/2026, 16:00";
     r.getElementById("topbtn").onclick = function () { window.scrollTo({ top: 0, behavior: "smooth" }); };
     setInterval(R, 60000);
     R();
