@@ -2,6 +2,69 @@ window.CIN26 = window.CIN26 || {};
 
 window.CIN26.N = [
     {
+      slug:"construindo-tecnologias-de-ponta",
+      t:"Voxar Labs promove debate sobre a relação entre pós-graduação e mercado de trabalho no REC’n’Play 2026",
+      s:"Pesquisadores do CIn-UFPE discutem como a produção científica pode impulsionar soluções para desafios reais da indústria e da sociedade",
+      dt:"11/11/2026, 15:56",
+      by:"Maria Eduarda Fernando da Silva",
+      img:"",
+      url:"/noticias/construindo-tecnologias-de-ponta/",
+      x:"No dia 11 de novembro, das 18h às 19h, na Sala 110 do Bloco C da CESAR School, pesquisadores do Voxar Labs, do CIn-UFPE, debatem os caminhos entre a pós-graduação, a pesquisa científica e o mercado de trabalho.",
+      html:`<p>Qual é o papel da pós-graduação na construção de tecnologias de ponta? Como a pesquisa desenvolvida na universidade pode se transformar em soluções para problemas reais do mercado e da sociedade? Essas questões conduzem a roda de conversa “Construindo tecnologias de ponta: Desmistificando a relação entre Pós-Graduação e o Mercado”, promovida por pesquisadores do Voxar Labs, laboratório do Centro de Informática (CIn) da UFPE, durante o REC’n’Play 2026.</p>
+<p>A atividade será realizada no dia 11 de novembro, das 18h às 19h, na Sala 110 do Bloco C da CESAR School. No formato de debate, o encontro é aberto ao público e busca aproximar a comunidade das possibilidades de formação e atuação profissional por meio da pesquisa científica.</p>
+<p>A conversa será mediada pelo professor Francisco Paulo Magalhães Simões e contará com a participação de Willams de Lima Costa (pós-doc em andamento), André Luiz Buarque Vieira Silva (doutor), Thifany Souza (doutoranda) e João Barbosa Moizes (mestrando). Entre os assuntos abordados estão a estrutura da pós-graduação, as possibilidades de colaboração entre universidades e empresas e os caminhos para transformar conhecimento científico em inovação e impacto.</p>
+<p>A discussão também apresentará exemplos de como a pesquisa desenvolvida no Voxar Labs contribui para o avanço de tecnologias em diferentes áreas, como mobilidade, espaços inteligentes e saúde. A partir das experiências dos participantes, o público poderá conhecer diferentes perspectivas sobre a formação acadêmica e as oportunidades profissionais que surgem da conexão entre ciência, tecnologia e mercado.</p>
+<p>A iniciativa busca aproximar estudantes, profissionais e demais interessados do universo da pesquisa científica, mostrando que a pós-graduação também pode ser um caminho para desenvolver soluções inovadoras, enfrentar desafios complexos e gerar impacto para a sociedade.</p>
+<h2>Sobre o Voxar Labs</h2>
+<p>Criado em 2011 no CIn-UFPE, o Voxar Labs é um dos principais laboratórios de realidade estendida da América Latina. Coordenado pela prof. Veronica Teichrieb, o laboratório conta com mais de 30 colaboradores e sua atuação envolve pesquisas em inteligência espacial, análise de comportamento, realidade estendida, visão computacional e inteligência artificial. O laboratório desenvolve projetos em colaboração com a indústria e a comunidade acadêmica, contribuindo para o avanço de tecnologias imersivas e para a formação de pesquisadores na área.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival 100% gratuito que transforma o Bairro do Recife em um grande palco de inovação, criatividade e conexões. Durante quatro dias intensos de programação, o REC’n’Play reúne pessoas, negócios e conhecimento em uma experiência imersiva e colaborativa. Com centenas de atividades, o evento abrange cinco grandes eixos temáticos: Tecnologia; Negócios; Criatividade e Mídias; Cidade e Sustentabilidade; e Cultura e Sociedade.</p>
+<p>Informações sobre a programação e inscrição no festival podem ser acessadas em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    },
+    {
+      slug:"dirigindo-entre-dois-mundos",
+      t:"Voxar Labs apresenta experiência de direção imersiva com realidade virtual no REC’n’Play",
+      s:"Atividade do laboratório do CIn-UFPE permite que o público experimente a condução de um veículo real por meio de pistas virtuais e tecnologias de realidade estendida",
+      dt:"11/11/2026, 15:56",
+      by:"Maria Eduarda Fernando da Silva",
+      img:"",
+      url:"/noticias/dirigindo-entre-dois-mundos/",
+      x:"No dia 12 de novembro, das 15h às 18h, no Espaço CIn-UFPE, o público pode dirigir um veículo real em uma pista virtual usando óculos de realidade virtual, em experiência do Voxar Labs.",
+      html:`<p>Como seria dirigir um carro real em uma pista virtual sem sair do lugar? Essa é a proposta da experiência “Dirigindo entre dois mundos: Experiências Automotivas do Futuro”, desenvolvida pelo Voxar Labs, laboratório do Centro de Informática (CIn) da UFPE. A atividade será realizada durante o REC’n’Play, no dia 12 de novembro, das 15h às 18h, no Espaço CIn-UFPE, localizado na Rua Vigário Tenório, 95, no Bairro do Recife.</p>
+<p>Na experiência, os participantes poderão entrar em um veículo real ligado, equipado e funcional, colocar óculos de realidade virtual e assumir o controle da direção. Enquanto visualizam uma pista virtual por meio do equipamento, poderão interagir com os controles físicos do automóvel, como volante, pedais e central multimídia, vivenciando a integração entre o ambiente real e o virtual.</p>
+<p>Com acompanhamento de pesquisadores, a atividade busca aproximar o público de tecnologias que estão transformando o futuro da mobilidade inteligente. A proposta também apresenta aplicações da realidade estendida, da computação espacial e de novas interfaces, demonstrando como essas ferramentas podem ampliar as possibilidades de interação entre pessoas e veículos.</p>
+<p>A experiência é aberta ao público geral e terá acesso gratuito. A atividade será conduzida pelo mestrando Gustavo Camargo, com apoio dos professores Francisco Simões e João Marcelo Teixeira.</p>
+<h2>Sobre o Voxar Labs</h2>
+<p>Criado em 2011 no CIn-UFPE, o Voxar Labs é um dos principais laboratórios de realidade estendida da América Latina. Coordenado pela prof. Veronica Teichrieb, o laboratório conta com mais de 30 colaboradores e sua atuação envolve pesquisas em inteligência espacial, análise de comportamento, realidade estendida, visão computacional e inteligência artificial. O laboratório desenvolve projetos em colaboração com a indústria e a comunidade acadêmica, contribuindo para o avanço de tecnologias imersivas e para a formação de pesquisadores na área.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival 100% gratuito que transforma o Bairro do Recife em um grande palco de inovação, criatividade e conexões. Durante quatro dias intensos de programação, o REC’n’Play reúne pessoas, negócios e conhecimento em uma experiência imersiva e colaborativa. Com centenas de atividades, o evento abrange cinco grandes eixos temáticos: Tecnologia; Negócios; Criatividade e Mídias; Cidade e Sustentabilidade; e Cultura e Sociedade.</p>
+<p>Informações sobre a programação e inscrição no festival podem ser acessadas em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    },
+    {
+      slug:"plano-estrategico-ia",
+      t:"Especialistas do CIn-UFPE explicam como incorporar um plano estratégico de IA às empresas no REC’n’Play",
+      s:"Encontro acontece no dia 13 de novembro, às 12h40, na Sala 204 do Bloco A da CESAR School",
+      dt:"11/11/2026, 15:56",
+      by:"Letícia Costa",
+      img:"",
+      url:"/noticias/plano-estrategico-ia/",
+      x:"No dia 13 de novembro, às 12h40, na Sala 204 do Bloco A da CESAR School, os professores Germano Vasconcelos, Geber Ramalho e Giordano Cabral debatem como construir estratégias e planos de IA dentro dos negócios.",
+      html:`<p>A Inteligência Artificial (IA) vem transformando modelos de negócios, modificando processos e introduzindo novas formas de trabalho dentro das organizações. Incorporar essas mudanças em um ambiente corporativo exige clareza no que se deseja, organização, investimentos e medição de resultados. No REC’n’Play 2026, especialistas do Centro de Informática (CIn) da UFPE discutirão essas questões com o público, e maneiras de como construir estratégias e planos de IA dentro de cada negócio. O encontro acontece no dia 13 de novembro, às 12h40, na Sala 204 do Bloco A da CESAR School.</p>
+<p>Os professores Germano Vasconcelos, Geber Ramalho e Giordano Cabral debaterão caminhos para a transformação da organização nessa era da IA Agêntica e IA Nativa. “Em que estágio estou na adoção da IA no meu negócio, e como caminhar para avançar na escala de maturidade nos diversos níveis da IA? Vamos discutir esses temas na realidade brasileira”, explica o professor Germano Vasconcelos.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival 100% gratuito que transforma o Bairro do Recife em um grande palco de inovação, criatividade e conexões. Durante quatro dias intensos de programação, o REC’n’Play reúne pessoas, negócios e conhecimento em uma experiência imersiva e colaborativa. Com centenas de atividades, o evento abrange cinco grandes eixos temáticos: Tecnologia; Negócios; Criatividade e Mídias; Cidade e Sustentabilidade; e Cultura e Sociedade.</p>
+<p>Informações sobre a programação e inscrição no festival podem ser acessadas em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    },
+    {
       slug:"profissional-software-agentes-inteligentes",
       t:"Professor do CIn-UFPE discute futuro do desenvolvimento de software na era da Inteligência Artificial no REC’n’Play 2026",
       s:"Encontro reúne especialistas da academia e do mercado para debater os impactos dos agentes inteligentes na formação e na atuação dos profissionais de tecnologia",

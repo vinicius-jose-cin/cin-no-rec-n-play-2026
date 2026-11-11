@@ -167,7 +167,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "11/11/2026, 11:38";
+    r.getElementById("up").textContent = "11/11/2026, 15:57";
     r.getElementById("topbtn").onclick = function () { window.scrollTo({ top: 0, behavior: "smooth" }); };
     setInterval(R, 60000);
     R();
