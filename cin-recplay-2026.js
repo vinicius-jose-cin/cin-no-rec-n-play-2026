@@ -124,7 +124,7 @@
     MC.onclick = closeMap;
     MD.onclick = function (e) { if (e.target === MD) closeMap(); };
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
-    r.getElementById("up").textContent = "10/11/2026, 22:00";
+    r.getElementById("up").textContent = "11/11/2026, 09:46";
     R();
   }
 

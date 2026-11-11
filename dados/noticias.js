@@ -2,6 +2,26 @@ window.CIN26 = window.CIN26 || {};
 
 window.CIN26.N = [
     {
+      slug:"profissional-software-agentes-inteligentes",
+      t:"Professor do CIn-UFPE discute futuro do desenvolvimento de software na era da Inteligência Artificial no REC’n’Play 2026",
+      s:"Encontro reúne especialistas da academia e do mercado para debater os impactos dos agentes inteligentes na formação e na atuação dos profissionais de tecnologia",
+      dt:"11/11/2026, 09:46",
+      by:"Maria Eduarda Fernando da Silva",
+      img:"",
+      url:"/noticias/profissional-software-agentes-inteligentes/",
+      x:"No dia 12 de novembro, das 11h20 às 12h20, na Sala 1 da UNIAESO, o professor Paulo Borba participa de painel sobre os impactos dos agentes inteligentes na formação e na atuação dos profissionais de tecnologia.",
+      html:`<p>A Inteligência Artificial está transformando a maneira como softwares são desenvolvidos e trazendo novos desafios para a formação e a atuação dos profissionais de tecnologia. Para discutir essas mudanças, o professor Paulo Borba, do Centro de Informática (CIn) da UFPE, participa do painel “Quem é o profissional de desenvolvimento de software na era dos agentes inteligentes?”, durante o REC’n’Play 2026. A atividade acontece no dia 12 de novembro, das 11h20 às 12h20, na Sala 1 da UNIAESO, localizada na Rua do Bom Jesus, nº 137, Bairro do Recife.</p>
+<p>Durante o painel, especialistas da universidade e do mercado irão compartilhar experiências e debater como empresas, instituições de ensino e profissionais podem se adaptar à presença crescente dos agentes inteligentes. Entre os assuntos abordados estão o desenvolvimento do pensamento crítico, a importância de incentivar o aprendizado contínuo e os desafios da formação de novos talentos em um ambiente cada vez mais integrado à IA.</p>
+<p>Além de Paulo Borba, participam da discussão Carlos Victor Gomes, líder técnico de Inovação da CactoWeb, Massilon Gomes da Silva Junior, gerente de Inovação da Pitang, e Andrea Queiroz, representante do CESAR.</p>
+<p>A conversa propõe uma reflexão sobre o futuro da profissão e as mudanças nas habilidades exigidas dos profissionais de desenvolvimento de software. Ao reunir diferentes perspectivas da academia e do setor produtivo, o painel busca contribuir para o debate sobre como preparar profissionais capazes de utilizar a Inteligência Artificial de forma crítica e estratégica.</p>
+<h2>Sobre o REC’n’Play</h2>
+<p>O REC’n’Play é um festival 100% gratuito que transforma o Bairro do Recife em um grande palco de inovação, criatividade e conexões. Durante quatro dias intensos de programação, o REC’n’Play reúne pessoas, negócios e conhecimento em uma experiência imersiva e colaborativa. Com centenas de atividades, o evento abrange cinco grandes eixos temáticos: Tecnologia; Negócios; Criatividade e Mídias; Cidade e Sustentabilidade; e Cultura e Sociedade.</p>
+<p>Informações sobre a programação e inscrição no festival podem ser acessadas em <a href="https://recnplay.pe/" target="_blank" rel="noopener">recnplay.pe</a>.</p>
+<h2>Sobre o CIn-UFPE</h2>
+<p>Com cinco décadas de história, o Centro de Informática (CIn) da UFPE é reconhecido como um dos principais polos de ensino e pesquisa em Computação na América Latina. Oferecendo quatro cursos de graduação (Ciência da Computação, Engenharia da Computação, Sistemas de Informação e Inteligência Artificial), o CIn-UFPE recebe, anualmente, cerca de 350 novos alunos e já formou mais de 2.300 profissionais que atuam em nível nacional e internacional.</p>
+<p>O Centro também é referência pela excelência de seus programas de pós-graduação, especialmente o Programa Acadêmico em Ciência da Computação, que possui nota máxima (7) na avaliação da Capes. No Ranking Universitário Folha (RUF) 2026, o CIn-UFPE figura entre os cinco melhores do país na área de Computação. Além disso, o Centro atua na formação de startups de tecnologia e na colaboração com mais de 40 empresas, nacionais e internacionais, por meio de parcerias estratégicas.</p>`
+    },
+    {
       slug:"release-cin-recnplay",
       t:"Centro de Informática da UFPE está presente no REC’n’Play com mais de 25 atividades e stand no bairro do Recife",
       s:"Professores, pesquisadores e alunos promoverão experiências imersivas, palestras e rodas de conversa sobre tecnologia no carnaval do conhecimento",
