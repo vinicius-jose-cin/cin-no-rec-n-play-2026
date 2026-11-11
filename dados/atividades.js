@@ -25,6 +25,8 @@ window.CIN26.A = [
     { t:0, n:"Como construir um plano estratégico de IA para meu negócio", p:["Germano Vasconcelos","Geber Ramalho","Giordano Cabral"], h:"12:40–13:40", l:"CESAR School · Bloco A, Sala 204", q:"Cesar School, Av. Cais do Apolo, 77, Recife - PE", g:["IA","Empreendedorismo"], d:["13"] },
     { t:0, n:"Debug Arena", p:["André Bartholomeu","Nathanael Silva","Douglas Silva"], h:"13:20–16:20", l:"UNIAESO · LAB", q:"UNIAESO, Rua do Bom Jesus, 137, Recife - PE", g:["Engenharia de Software","Games"], d:["13"] },
     { t:0, n:"Como a IA está transformando a Engenharia de Software?", p:["Paulo Borba","Rodrigo Bonifácio"], h:"14:00–14:45", l:"Ponto BB · Palco BBDW", q:"Ponto BB - Palco BBDW, Av. Rio Branco, 240, Recife - PE", g:["IA","Engenharia de Software"], d:["13"] },
+    { t:0, n:"Do zero ao agente: crie seu agente de recomendação com IA", p:["Sofia Sakovitz","Júlia Bezerra","Beatriz Pedrosa"], h:"13:40–16:40", l:"E.T.E. Porto Digital · LAB 2", q:"E.T.E. Porto Digital, Av. Rio Branco, 193, Recife - PE", g:["IA","Oficina"], d:["13"] },
+    { t:0, n:"Do Meu Jeito: uma oficina de vibe coding", p:["Karem Santos"], h:"16:40–18:40", l:"E.T.E. Porto Digital · LAB 1", q:"E.T.E. Porto Digital, Av. Rio Branco, 193, Recife - PE", g:["IA","Games"], d:["13"] },
     { t:1, n:"Live", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11"] },
     { t:1, n:"SEAL", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Tecnologia"], d:["11"] },
     { t:1, n:"LAJE", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", g:["Games"], d:["11"] },
