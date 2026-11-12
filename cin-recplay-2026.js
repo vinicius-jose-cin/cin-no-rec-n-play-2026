@@ -171,6 +171,42 @@
     r.getElementById("topbtn").onclick = function () { window.scrollTo({ top: 0, behavior: "smooth" }); };
     setInterval(R, 60000);
     R();
+
+    // Atualização dinâmica dos dados sem refresh: busca os arquivos de dados
+    // com cache-busting e re-renderiza (cards + ticker) quando o conteúdo muda.
+    var dataBase = "";
+    var sc = document.querySelector('script[src*="atividades.js"]');
+    if (sc) dataBase = sc.getAttribute("src").replace(/[^/]*$/, "");
+    var lastTxt = {};
+    function copyArr(dst, src) {
+      dst.length = 0;
+      for (var i = 0; i < src.length; i++) dst.push(src[i]);
+    }
+    function loadData(name, apply, redraw) {
+      if (!dataBase) return;
+      fetch(dataBase + name + ".js?cb=" + Date.now(), { cache: "no-store" })
+        .then(function (r) { return r.ok ? r.text() : null; })
+        .then(function (txt) {
+          if (!txt || txt === lastTxt[name]) return;
+          lastTxt[name] = txt;
+          try { new Function(txt)(); } catch (e) { return; }
+          apply();
+          redraw();
+        })
+        .catch(function () {});
+    }
+    var newsCount = 0;
+    function poll() {
+      loadData("dias", function () { copyArr(DIAS, window.CIN26.DIAS); }, R);
+      loadData("atividades", function () { copyArr(A, window.CIN26.A); }, R);
+      // Notícias: prioridade baixa, verifica a cada 5 ciclos (5 min).
+      if (++newsCount % 5 === 0) loadData("noticias", function () { copyArr(N, window.CIN26.N); }, function () { if (!ART) RN(); });
+    }
+    setInterval(poll, 60000);
+    document.addEventListener("visibilitychange", function () {
+      if (document.visibilityState === "visible") poll();
+    });
+    poll();
   }
 
   if (document.readyState === "loading") document.addEventListener("DOMContentLoaded", init);
