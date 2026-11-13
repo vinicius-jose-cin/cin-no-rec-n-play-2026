@@ -35,7 +35,7 @@ window.CIN26.A = [
     { t:1, n:"SEAL", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["11"] },
     { t:1, n:"LAJE", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Games"], d:["11"] },
     { t:1, n:"Live", p:[], h:"10:00–12:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["12"] },
-    { t:1, n:"CINTIA", p:[], h:"10:00–12:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["12"] },
+    { t:1, n:"Cintia", p:[], h:"10:00–12:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["12"] },
     { t:1, n:"SEAL", p:[], h:"10:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["12"] },
     { t:1, n:"Voxar", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Visão Computacional"], d:["12"] },
     { t:1, n:"LAJE", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Games"], d:["12"] },
@@ -44,13 +44,13 @@ window.CIN26.A = [
     { t:1, n:"LAJE", p:[], h:"10:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Games"], d:["13"] },
     { t:1, n:"SEAL", p:[], h:"12:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["13"] },
     { t:1, n:"Laser", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["13"] },
-    { t:1, n:"CINTIA", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["13"] },
-    { t:1, n:"LIGIA", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["13"] },
+    { t:1, n:"Cintia", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["13"] },
+    { t:1, n:"Ligia", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["13"] },
     { t:1, n:"RobôCIn", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Robótica"], d:["14"] },
     { t:1, n:"LED", p:[], h:"10:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["14"] },
     { t:1, n:"LAJE", p:[], h:"10:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Games"], d:["14"] },
     { t:1, n:"SEAL", p:[], h:"10:00–12:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["14"] },
     { t:1, n:"Laser", p:[], h:"12:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["14"] },
-    { t:1, n:"CINTIA", p:[], h:"12:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["14"] },
-    { t:1, n:"LIGIA", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["14"] }
+    { t:1, n:"Cintia", p:[], h:"12:00–15:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["14"] },
+    { t:1, n:"Ligia", p:[], h:"15:00–18:00", l:"Stand do CIn · Espaço CIn-UFPE", q:"Espaço CIn-UFPE, R. Vig. Tenório, 95, Recife - PE", u:"https://maps.app.goo.gl/mjr2W8gWVmcVMvhD7", g:["Tecnologia"], d:["14"] }
   ];
