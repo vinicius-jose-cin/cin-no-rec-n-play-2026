@@ -60,7 +60,7 @@
         var t = evtTimes(a, s);
         if (t && t.s > runT) { runT = t.s; run = a; }
       });
-      var msgs = ["📢 DIA 3 ACABANDO, CORRE PRA PEGAR O RESTINHO! 📢", "O Stand do CIn tá a todo vapor, passa lá!"];
+      var msgs = ["Dia 3 encerrado. Nos vemos amanhã para o último dia do CIn no REC'n'Play!"];
       if (run) msgs.unshift("Atividade rolando: " + run.n + " · " + run.l);
       var one = '<span class=sep></span>' + msgs.join('<span class=sep></span>');
       var tk = r.getElementById("track");
