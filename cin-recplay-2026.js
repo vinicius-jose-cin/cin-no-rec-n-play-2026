@@ -4,16 +4,6 @@
   var DIAS = window.CIN26.DIAS, A = window.CIN26.A, N = window.CIN26.N,
       L = window.CIN26.L, CSS = window.CIN26.CSS, T = window.CIN26.T;
 
-  // Dia selecionado automaticamente: dentro do evento, o dia corrente;
-  // antes do evento, o primeiro dia (pré-seleção); depois do último, o último dia.
-  function diaAtual(agora) {
-    var t = agora.getTime(), sel = DIAS[0].d;
-    DIAS.forEach(function (x) {
-      if (t >= new Date(x.ini).getTime()) sel = x.d;
-    });
-    return sel;
-  }
-
   function init() {
     if (document.getElementById("cin26")) return;
     var h = document.createElement("div");
@@ -23,80 +13,36 @@
     document.body.appendChild(h);
     document.body.style.cssText += "margin:0;background:#050505";
 
-    var P = r.getElementById("panel"), F = r.querySelector(".filters");
-    var Ds = [...r.querySelectorAll(".day")], Fs = [...r.querySelectorAll(".f")];
-    var s = null, f = "all";
+    var P = r.getElementById("panel");
+    var Fs = [...r.querySelectorAll(".f")];
+    var f = "all";
 
-    function evtTimes(a, day) {
-      var D = DIAS.filter(function (x) { return x.d == day; })[0];
-      if (!D || !a.h) return null;
-      var parts = String(a.h).split(/[–-]/);
-      var hm = function (p) {
-        var m = String(p).replace(/\D/g, "");
-        return m.length >= 3 ? parseInt(m.slice(0, -2), 10) * 60 + parseInt(m.slice(-2), 10) : null;
-      };
-      var st = hm(parts[0]), en = hm(parts[1] || parts[0]);
-      if (st == null) return null;
-      var base = new Date(D.ini).getTime();
-      return { s: base + st * 60000, e: base + (en == null ? st + 60 : en) * 60000 };
-    }
-    function status(a) {
-      var t = s ? evtTimes(a, s) : null;
-      if (!t) return null;
-      var now = Date.now();
-      if (now < t.s) {
-        var d = Math.round((t.s - now) / 60000), hh = Math.floor(d / 60), mm = d % 60;
-        return { k: "soon", x: "Em " + (hh ? hh + "h" + (mm ? " " + mm + "min" : "") : mm + " min") };
-      }
-      if (now <= t.e) return { k: "now", x: "Agora" };
-      return { k: "done", x: "Encerrado" };
-    }
-    function TICK() {
-      var run = null, runT = 0;
-      A.forEach(function (a) {
-        if (!s || a.d.indexOf(s) < 0) return;
-        var st = status(a);
-        if (!st || st.k != "now") return;
-        var t = evtTimes(a, s);
-        if (t && t.s > runT) { runT = t.s; run = a; }
-      });
-      var msgs = ["⚠️ ÚLTIMA HORA DO DIA 4! ⚠️"];
-      if (run) msgs.unshift("Atividade rolando: " + run.n + " · " + run.l);
-      var one = '<span class=sep></span>' + msgs.join('<span class=sep></span>');
-      var tk = r.getElementById("track");
-      if (tk) tk.innerHTML = [0, 1, 2, 3].map(function (i) {
-        return '<span class=tick' + (i ? ' aria-hidden=true' : '') + '>' + one + '</span>';
-      }).join("");
-    }
     var C = function (a) {
       var href = a.u || ("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(a.q || a.l));
-      var st = status(a);
       return '<article class=card><div class=tags>' + a.g.map(function (g) { return "<span>" + g + "</span>"; }).join("") +
         "</div><h4>" + a.n + "</h4>" + (a.p.length ? '<p class=who><span class="mic u" role=img aria-label="Palestrantes"><svg aria-hidden="true"><use href="#i-u"/></svg></span><span class=pt>' + a.p.join(" · ") + "</span></p>" : "") +
-        '<div class=meta><span class="mic c" role=img aria-label="Horário"><svg aria-hidden="true"><use href="#i-c"/></svg></span>' + (a.h || "A confirmar") + (st ? '<span class="stb ' + st.k + '">' + st.x + '</span>' : '') + '</div>' +
+        '<div class=meta><span class="mic c" role=img aria-label="Horário"><svg aria-hidden="true"><use href="#i-c"/></svg></span>' + (a.h || "A confirmar") + '</div>' +
         '<div class=meta><span class="mic p" role=img aria-label="Local"><svg aria-hidden="true"><use href="#i-p"/></svg></span><a class=map href="' + href + '" target=_blank rel=noopener>' + a.l + ' ↗</a></div></article>';
     };
     var G = function (t, l) {
       return '<section class=grp><div class=gh><h3>' + (t ? "Stand do CIn" : "Atividades") + '</h3></div><div class=cards>' + l.map(C).join("") + "</div></section>";
     };
     function R() {
-      if (!s) {
-        F.hidden = true;
-        P.innerHTML = '<div class=hint><b>Escolha um dia</b><span>Selecione uma data.</span></div>';
-        return;
-      }
-      F.hidden = false;
       var m = function (x) {
         var b = String(x.h || "").split("–")[0].split("-")[0].replace(/\D/g, "");
         return b ? parseInt(b, 10) : 9999;
       };
-      var a = A.filter(function (x) { return x.d.indexOf(s) > -1; }).sort(function (x, y) { return (x.t ? 1 : 0) - (y.t ? 1 : 0) || m(x) - m(y); });
-      var l = f == "all" ? a : a.filter(function (x) { return f == "a" ? !x.t : !!x.t; });
+      var WD = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SÁB"];
       var h = "";
-      if (l.some(function (x) { return !x.t; })) h += G(0, l.filter(function (x) { return !x.t; }));
-      if (l.some(function (x) { return x.t; })) h += G(1, l.filter(function (x) { return x.t; }));
+      DIAS.forEach(function (D) {
+        var a = A.filter(function (x) { return x.d.indexOf(D.d) > -1; }).sort(function (x, y) { return (x.t ? 1 : 0) - (y.t ? 1 : 0) || m(x) - m(y); });
+        var l = f == "all" ? a : a.filter(function (x) { return f == "a" ? !x.t : !!x.t; });
+        if (!l.length) return;
+        h += '<div class="gh dayh"><h3>' + D.d + "/11 · " + WD[new Date(D.ini).getDay()] + "</h3></div>";
+        if (l.some(function (x) { return !x.t; })) h += G(0, l.filter(function (x) { return !x.t; }));
+        if (l.some(function (x) { return x.t; })) h += G(1, l.filter(function (x) { return x.t; }));
+      });
       P.innerHTML = h || '<div class=empty><b>Nada por aqui</b><span>Nada neste filtro.</span></div>';
-      TICK();
     }
 
     var NT = r.getElementById("noticias"), TP = r.getElementById("tab-prog"), TN = r.getElementById("tab-news"), SP = r.getElementById("programa");
@@ -128,21 +74,6 @@
       RN();
     }
 
-    Ds.forEach(function (b) {
-      b.onclick = function () {
-        s = s == b.dataset.d ? null : b.dataset.d;
-        Ds.forEach(function (x) { x.setAttribute("aria-selected", x.dataset.d == s); });
-        R();
-      };
-    });
-    // Seleciona automaticamente o dia de hoje (ou o último dia já ocorrido).
-    (function () {
-      var d = diaAtual(new Date());
-      if (!d) return;
-      s = d;
-      Ds.forEach(function (x) { x.setAttribute("aria-selected", x.dataset.d == s); });
-      R();
-    })();
     Fs.forEach(function (b) {
       b.onclick = function () {
         f = b.dataset.f;
@@ -173,7 +104,7 @@
     R();
 
     // Atualização dinâmica dos dados sem refresh: busca os arquivos de dados
-    // com cache-busting e re-renderiza (cards + ticker) quando o conteúdo muda.
+    // com cache-busting e re-renderiza os cards quando o conteúdo muda.
     var dataBase = "";
     var sc = document.querySelector('script[src*="atividades.js"]');
     if (sc) dataBase = sc.getAttribute("src").replace(/[^/]*$/, "");
