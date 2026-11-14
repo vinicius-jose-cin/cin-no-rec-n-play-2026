@@ -60,7 +60,7 @@
         var t = evtTimes(a, s);
         if (t && t.s > runT) { runT = t.s; run = a; }
       });
-      var msgs = ["📢 COMEÇOU O DIA 4! 📢"];
+      var msgs = ["📢 DIA 4 FERVENDO, COLA NO STAND! 📢"];
       if (run) msgs.unshift("Atividade rolando: " + run.n + " · " + run.l);
       var one = '<span class=sep></span>' + msgs.join('<span class=sep></span>');
       var tk = r.getElementById("track");
