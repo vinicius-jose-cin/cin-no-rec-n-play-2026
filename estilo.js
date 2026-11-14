@@ -26,13 +26,17 @@ window.CIN26.CSS =
     ".art .hero,.art .vtabs,.art #programa{display:none}.art main{padding-top:36px}.art #noticias{display:block}" +
     ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:700 clamp(30px,4.6vw,46px)/1.05 'Barlow Condensed',Impact,sans-serif;margin:0 0 8px}.article-by{font:500 13px var(--m);color:var(--u);margin:0 0 14px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:700 clamp(24px,3vw,34px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
     ".days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}" +
-    ".day{text-align:left;background:#0c0c0c;border:1px solid #fff2;border-radius:10px;padding:14px;color:var(--k)}" +
+    ".day{text-align:left;background:#0c0c0c;border:1px solid #fff2;border-radius:10px;padding:14px;color:var(--k);cursor:pointer}" +
     ".day b{display:block;font:700 clamp(30px,4vw,44px)/1 'Barlow Condensed',Impact,sans-serif}" +
     ".day span{font:600 9px var(--m);color:var(--u)}" +
+    ".day[aria-selected=true]{background:var(--c);border-color:transparent;color:#050505}.day[aria-selected=true] span{color:#050505b3}" +
+    ":focus-visible{outline:2px solid var(--l)}" +
+    ".filters{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}.filters[hidden]{display:none}" +
+    ".f{background:none;border:1px solid #fff3;color:var(--u);border-radius:99px;width:108px;padding:12px 0;text-align:center;font:600 12px var(--m);cursor:pointer}" +
+    ".f[aria-pressed=true]{background:var(--l);border-color:var(--l);color:#050505}" +
     ".thanks{border:1px dashed #fff3;border-radius:14px;padding:36px 24px;text-align:center}" +
     ".thanks h2{font:700 clamp(28px,4.4vw,46px)/1.05 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin:0 0 12px}" +
     ".thanks p{max-width:640px;margin:0 auto;color:var(--u);font-size:16px;line-height:1.6}" +
-    ":focus-visible{outline:2px solid var(--l)}" +
     ".grp{margin:0 0 34px}.gh{display:flex;align-items:center;gap:10px;margin:0 0 14px}" +
     ".gh h3{font:700 clamp(22px,3vw,30px)/1 'Barlow Condensed',Impact,sans-serif;margin:0}" +
     ".cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:14px}" +
@@ -49,7 +53,7 @@ window.CIN26.CSS =
     ".hint b,.empty b{display:block;font:700 clamp(22px,3vw,30px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin-bottom:8px}" +
     "footer{border-top:1px solid #fff2;padding:26px 4vw 34px;text-align:center;font-size:12px;color:#8f8880}footer a{color:#ec008c}" +
     ".sec,.gh h3,.hint b,.empty b,.day span,.k,.hero h1{text-transform:uppercase}" +
-    "@media(max-width:640px){header{justify-content:center}.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}.topbtn{display:flex}}" +
+    "@media(max-width:640px){header{justify-content:center}.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}.topbtn{display:flex}}" +
     "@media(max-width:700px){.news{grid-template-columns:1fr;gap:12px;padding:16px}.news-img img{max-height:none}.news h3{font-size:22px}.news-sub{font-size:14px;margin-bottom:8px}.news-date{font-size:10px;margin-bottom:6px}.news-by{font-size:11px}.news-text{display:none}.news-link{margin-top:10px;font-size:11px}}";
 
 window.CIN26.T =
@@ -57,11 +61,13 @@ window.CIN26.T =
     '<div class=w><header><div class=brand><span class=cn>CIn no</span>' + window.CIN26.L + '</div></header>' +
     '<section class=hero><div><h1>O futuro<br>nasceu<br><em>aqui</em></h1><button class=mapbtn id=mapbtn aria-haspopup=dialog aria-expanded=false><svg viewBox="0 0 24 24" aria-hidden=true><use href="#i-p"/></svg>Mapa do Stand</button></div><i class=star></i></section>' +
     '<main><div class=vtabs><button class=vtab id=tab-prog aria-pressed=true>Programação</button><button class=vtab id=tab-news aria-pressed=false>Notícias</button></div><section id=programa><div class=days>' +
-    '<div class=day><b>11</b><span>QUA</span></div>' +
-    '<div class=day><b>12</b><span>QUI</span></div>' +
-    '<div class=day><b>13</b><span>SEX</span></div>' +
-    '<div class=day><b>14</b><span>SÁB</span></div></div>' +
-    '<div id=panel><div class=thanks><h2>Obrigado por participar!</h2><p>Esperamos que você tenha aproveitado as palestras e atividades do CIn no REC\'n\'Play! Contamos com sua presença novamente no ano que vem.</p></div></div></section><section id=noticias hidden></section></main>' +
+    '<button class=day data-d=11><b>11</b><span>QUA</span></button>' +
+    '<button class=day data-d=12><b>12</b><span>QUI</span></button>' +
+    '<button class=day data-d=13><b>13</b><span>SEX</span></button>' +
+    '<button class=day data-d=14><b>14</b><span>SÁB</span></button></div>' +
+    '<div class=filters hidden><button class=f data-f=all aria-pressed=true>Tudo</button>' +
+    '<button class=f data-f=a aria-pressed=false>Atividades</button><button class=f data-f=s aria-pressed=false>Stand</button></div>' +
+    '<div id=panel></div></section><section id=noticias hidden></section></main>' +
     '<footer><p>Feito com <span style=color:var(--p)>♥</span> pela <a href=https://ascom.cin.ufpe.br/>ASCOM CIn</a></p>' +
     '<p>Não nos responsabilizamos por eventuais mudanças na programação do REC\'n\'Play.</p>' +
     '<p>Última atualização: <span id=up></span></p></footer>' +
