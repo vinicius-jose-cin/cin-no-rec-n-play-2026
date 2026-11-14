@@ -1,8 +1,7 @@
 (function () {
   "use strict";
 
-  var DIAS = window.CIN26.DIAS, A = window.CIN26.A, N = window.CIN26.N,
-      L = window.CIN26.L, CSS = window.CIN26.CSS, T = window.CIN26.T;
+  var N = window.CIN26.N, L = window.CIN26.L, CSS = window.CIN26.CSS, T = window.CIN26.T;
 
   function init() {
     if (document.getElementById("cin26")) return;
@@ -12,38 +11,6 @@
     r.innerHTML = "<style>" + CSS + "</style>" + T;
     document.body.appendChild(h);
     document.body.style.cssText += "margin:0;background:#050505";
-
-    var P = r.getElementById("panel");
-    var Fs = [...r.querySelectorAll(".f")];
-    var f = "all";
-
-    var C = function (a) {
-      var href = a.u || ("https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(a.q || a.l));
-      return '<article class=card><div class=tags>' + a.g.map(function (g) { return "<span>" + g + "</span>"; }).join("") +
-        "</div><h4>" + a.n + "</h4>" + (a.p.length ? '<p class=who><span class="mic u" role=img aria-label="Palestrantes"><svg aria-hidden="true"><use href="#i-u"/></svg></span><span class=pt>' + a.p.join(" · ") + "</span></p>" : "") +
-        '<div class=meta><span class="mic c" role=img aria-label="Horário"><svg aria-hidden="true"><use href="#i-c"/></svg></span>' + (a.h || "A confirmar") + '</div>' +
-        '<div class=meta><span class="mic p" role=img aria-label="Local"><svg aria-hidden="true"><use href="#i-p"/></svg></span><a class=map href="' + href + '" target=_blank rel=noopener>' + a.l + ' ↗</a></div></article>';
-    };
-    var G = function (t, l) {
-      return '<section class=grp><div class=gh><h3>' + (t ? "Stand do CIn" : "Atividades") + '</h3></div><div class=cards>' + l.map(C).join("") + "</div></section>";
-    };
-    function R() {
-      var m = function (x) {
-        var b = String(x.h || "").split("–")[0].split("-")[0].replace(/\D/g, "");
-        return b ? parseInt(b, 10) : 9999;
-      };
-      var WD = ["DOM", "SEG", "TER", "QUA", "QUI", "SEX", "SÁB"];
-      var h = "";
-      DIAS.forEach(function (D) {
-        var a = A.filter(function (x) { return x.d.indexOf(D.d) > -1; }).sort(function (x, y) { return (x.t ? 1 : 0) - (y.t ? 1 : 0) || m(x) - m(y); });
-        var l = f == "all" ? a : a.filter(function (x) { return f == "a" ? !x.t : !!x.t; });
-        if (!l.length) return;
-        h += '<div class="gh dayh"><h3>' + D.d + "/11 · " + WD[new Date(D.ini).getDay()] + "</h3></div>";
-        if (l.some(function (x) { return !x.t; })) h += G(0, l.filter(function (x) { return !x.t; }));
-        if (l.some(function (x) { return x.t; })) h += G(1, l.filter(function (x) { return x.t; }));
-      });
-      P.innerHTML = h || '<div class=empty><b>Nada por aqui</b><span>Nada neste filtro.</span></div>';
-    }
 
     var NT = r.getElementById("noticias"), TP = r.getElementById("tab-prog"), TN = r.getElementById("tab-news"), SP = r.getElementById("programa");
     function RN() {
@@ -74,13 +41,6 @@
       RN();
     }
 
-    Fs.forEach(function (b) {
-      b.onclick = function () {
-        f = b.dataset.f;
-        Fs.forEach(function (x) { x.setAttribute("aria-pressed", x.dataset.f == f); });
-        R();
-      };
-    });
     var MB = r.getElementById("mapbtn"), MD = r.getElementById("mapa"), MI = r.getElementById("mapa-img"), MC = r.getElementById("mapa-close");
     function closeMap() {
       MD.hidden = true;
@@ -100,11 +60,8 @@
     document.addEventListener("keydown", function (e) { if (e.key === "Escape" && !MD.hidden) closeMap(); });
     r.getElementById("up").textContent = "13/11/2026, 10:06";
     r.getElementById("topbtn").onclick = function () { window.scrollTo({ top: 0, behavior: "smooth" }); };
-    setInterval(R, 60000);
-    R();
-
-    // Atualização dinâmica dos dados sem refresh: busca os arquivos de dados
-    // com cache-busting e re-renderiza os cards quando o conteúdo muda.
+    // Atualização dinâmica das notícias sem refresh: busca o arquivo de dados
+    // com cache-busting e re-renderiza quando o conteúdo muda.
     var dataBase = "";
     var sc = document.querySelector('script[src*="atividades.js"]');
     if (sc) dataBase = sc.getAttribute("src").replace(/[^/]*$/, "");
@@ -128,8 +85,6 @@
     }
     var newsCount = 0;
     function poll() {
-      loadData("dias", function () { copyArr(DIAS, window.CIN26.DIAS); }, R);
-      loadData("atividades", function () { copyArr(A, window.CIN26.A); }, R);
       // Notícias: prioridade baixa, verifica a cada 5 ciclos (5 min).
       if (++newsCount % 5 === 0) loadData("noticias", function () { copyArr(N, window.CIN26.N); }, function () { if (!ART) RN(); });
     }

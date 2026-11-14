@@ -25,13 +25,14 @@ window.CIN26.CSS =
     ".news-text{font-size:15px;line-height:1.6;color:var(--u);margin:0;white-space:pre-line}.news h3 a{color:inherit;text-decoration:none}.news h3 a:hover{background:var(--c);-webkit-background-clip:text;background-clip:text;color:transparent;-webkit-text-fill-color:transparent}.news-link{display:inline-block;margin-top:14px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.news-img{text-decoration:none}" +
     ".art .hero,.art .vtabs,.art #programa{display:none}.art main{padding-top:36px}.art #noticias{display:block}" +
     ".article{max-width:760px;margin:0 auto}.back{display:inline-block;margin:0 0 18px;color:#ec008c;font:600 12px var(--m);text-decoration:underline;text-underline-offset:3px}.article-img{display:block;width:100%;max-width:600px;height:auto;margin:0 auto 22px;border-radius:12px}.article-meta{font:600 11px var(--m);letter-spacing:.08em;color:var(--l);text-transform:uppercase;margin:0 0 10px}.article-title{font:700 clamp(30px,4.6vw,46px)/1.05 'Barlow Condensed',Impact,sans-serif;margin:0 0 8px}.article-by{font:500 13px var(--m);color:var(--u);margin:0 0 14px}.article-sub{font:600 18px/1.4 var(--m);color:var(--k);font-style:italic;margin:0 0 24px}.article-body{font-size:17px;line-height:1.7;color:var(--u)}.article-body p{margin:0 0 16px}.article-body h2{font:700 clamp(24px,3vw,34px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin:30px 0 10px}.article-body strong{color:var(--k)}.article-body a{color:#ec008c}" +
-    ".thanks{border:1px dashed #fff3;border-radius:14px;padding:36px 24px;text-align:center;margin:0 0 26px}" +
+    ".days{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}" +
+    ".day{text-align:left;background:#0c0c0c;border:1px solid #fff2;border-radius:10px;padding:14px;color:var(--k)}" +
+    ".day b{display:block;font:700 clamp(30px,4vw,44px)/1 'Barlow Condensed',Impact,sans-serif}" +
+    ".day span{font:600 9px var(--m);color:var(--u)}" +
+    ".thanks{border:1px dashed #fff3;border-radius:14px;padding:36px 24px;text-align:center}" +
     ".thanks h2{font:700 clamp(28px,4.4vw,46px)/1.05 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin:0 0 12px}" +
     ".thanks p{max-width:640px;margin:0 auto;color:var(--u);font-size:16px;line-height:1.6}" +
     ":focus-visible{outline:2px solid var(--l)}" +
-    ".filters{display:flex;gap:10px;flex-wrap:wrap;margin:0 0 26px}.filters[hidden]{display:none}" +
-    ".f{background:none;border:1px solid #fff3;color:var(--u);border-radius:99px;width:108px;padding:12px 0;text-align:center;font:600 12px var(--m);cursor:pointer}" +
-    ".f[aria-pressed=true]{background:var(--l);border-color:var(--l);color:#050505}" +
     ".grp{margin:0 0 34px}.gh{display:flex;align-items:center;gap:10px;margin:0 0 14px}" +
     ".gh h3{font:700 clamp(22px,3vw,30px)/1 'Barlow Condensed',Impact,sans-serif;margin:0}" +
     ".cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr));gap:14px}" +
@@ -46,20 +47,21 @@ window.CIN26.CSS =
     ".topbtn{position:fixed;right:16px;bottom:16px;z-index:50;width:44px;height:44px;border-radius:50%;border:0;background:var(--l);color:#050505;font:700 18px/1 var(--m);cursor:pointer;display:none;align-items:center;justify-content:center;box-shadow:0 8px 24px #000a;transition:transform .2s}.topbtn:hover{transform:translateY(-2px)}" +
      ".hint,.empty{border:1px dashed #fff3;border-radius:14px;padding:36px 24px;text-align:center;color:var(--u)}" +
     ".hint b,.empty b{display:block;font:700 clamp(22px,3vw,30px)/1.1 'Barlow Condensed',Impact,sans-serif;color:var(--k);margin-bottom:8px}" +
-    ".dayh{margin:34px 0 16px}.dayh:first-child{margin-top:0}.gh.dayh h3{font-size:clamp(26px,3.6vw,38px)}" +
     "footer{border-top:1px solid #fff2;padding:26px 4vw 34px;text-align:center;font-size:12px;color:#8f8880}footer a{color:#ec008c}" +
-    ".sec,.gh h3,.hint b,.empty b,.k,.hero h1{text-transform:uppercase}" +
-    "@media(max-width:640px){header{justify-content:center}.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.f{width:auto;padding:12px 18px}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}.topbtn{display:flex}}" +
+    ".sec,.gh h3,.hint b,.empty b,.day span,.k,.hero h1{text-transform:uppercase}" +
+    "@media(max-width:640px){header{justify-content:center}.hero{gap:14px}.star{width:clamp(70px,20vw,90px)}.days{grid-template-columns:repeat(2,1fr)}.modal{padding:16px}.modal-body img{max-height:calc(100vh - 96px)}.topbtn{display:flex}}" +
     "@media(max-width:700px){.news{grid-template-columns:1fr;gap:12px;padding:16px}.news-img img{max-height:none}.news h3{font-size:22px}.news-sub{font-size:14px;margin-bottom:8px}.news-date{font-size:10px;margin-bottom:6px}.news-by{font-size:11px}.news-text{display:none}.news-link{margin-top:10px;font-size:11px}}";
 
 window.CIN26.T =
     '<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="i-u" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol><symbol id="i-c" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol><symbol id="i-p" viewBox="0 0 24 24"><path d="M21 10c0 7-9 12-9 12S3 17 3 10a9 9 0 1 1 18 0z"/><circle cx="12" cy="10" r="3"/></symbol></svg>' +
     '<div class=w><header><div class=brand><span class=cn>CIn no</span>' + window.CIN26.L + '</div></header>' +
     '<section class=hero><div><h1>O futuro<br>nasceu<br><em>aqui</em></h1><button class=mapbtn id=mapbtn aria-haspopup=dialog aria-expanded=false><svg viewBox="0 0 24 24" aria-hidden=true><use href="#i-p"/></svg>Mapa do Stand</button></div><i class=star></i></section>' +
-    '<main><div class=vtabs><button class=vtab id=tab-prog aria-pressed=true>Programação</button><button class=vtab id=tab-news aria-pressed=false>Notícias</button></div><section id=programa><div class=thanks><h2>Obrigado por participar!</h2><p>Esperamos que você tenha aproveitado as palestras e atividades do CIn no REC\'n\'Play! Contamos com sua presença novamente no ano que vem.</p></div>' +
-    '<div class=filters><button class=f data-f=all aria-pressed=true>Tudo</button>' +
-    '<button class=f data-f=a aria-pressed=false>Atividades</button><button class=f data-f=s aria-pressed=false>Stand</button></div>' +
-    '<div id=panel></div></section><section id=noticias hidden></section></main>' +
+    '<main><div class=vtabs><button class=vtab id=tab-prog aria-pressed=true>Programação</button><button class=vtab id=tab-news aria-pressed=false>Notícias</button></div><section id=programa><div class=days>' +
+    '<div class=day><b>11</b><span>QUA</span></div>' +
+    '<div class=day><b>12</b><span>QUI</span></div>' +
+    '<div class=day><b>13</b><span>SEX</span></div>' +
+    '<div class=day><b>14</b><span>SÁB</span></div></div>' +
+    '<div id=panel><div class=thanks><h2>Obrigado por participar!</h2><p>Esperamos que você tenha aproveitado as palestras e atividades do CIn no REC\'n\'Play! Contamos com sua presença novamente no ano que vem.</p></div></div></section><section id=noticias hidden></section></main>' +
     '<footer><p>Feito com <span style=color:var(--p)>♥</span> pela <a href=https://ascom.cin.ufpe.br/>ASCOM CIn</a></p>' +
     '<p>Não nos responsabilizamos por eventuais mudanças na programação do REC\'n\'Play.</p>' +
     '<p>Última atualização: <span id=up></span></p></footer>' +
